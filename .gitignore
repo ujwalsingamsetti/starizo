@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Build artifacts (keep dist/assets/style.css tracked)
+# dist/ is intentionally NOT ignored - compiled CSS is committed
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
