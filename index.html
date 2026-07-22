@@ -691,11 +691,11 @@
         <!-- 5 Cards row with green leaf structure matching Figma -->
         <div class="grid grid-cols-5 gap-6">
           <!-- Food Manufacturers -->
-          <div style="background-color: #00A256;"
-            class="rounded-tl-[36px] rounded-br-[36px] rounded-tr-[8px] rounded-bl-[8px] p-3 flex flex-col justify-between shadow-md transition-transform duration-300 hover:-translate-y-1">
+          <div style="background-color: #00A256; border-radius: 44px 8px 44px 8px;"
+            class="p-3 flex flex-col justify-between shadow-md transition-transform duration-300 hover:-translate-y-1 overflow-hidden">
             <!-- Image Wrapper with matching leaf shape & padding -->
-            <div
-              class="relative w-full h-[280px] rounded-tl-[26px] rounded-br-[26px] rounded-tr-[4px] rounded-bl-[4px] overflow-hidden">
+            <div style="border-radius: 34px 3px 34px 3px;"
+              class="relative w-full h-[280px] overflow-hidden">
               <img src="./public/assets/industry-food.png" alt="Food Manufacturers" class="w-full h-full object-cover">
             </div>
             <!-- White Text Label -->
@@ -705,10 +705,10 @@
           </div>
 
           <!-- Nutrition Brands -->
-          <div style="background-color: #00A256;"
-            class="rounded-tl-[36px] rounded-br-[36px] rounded-tr-[8px] rounded-bl-[8px] p-3 flex flex-col justify-between shadow-md transition-transform duration-300 hover:-translate-y-1">
-            <div
-              class="relative w-full h-[280px] rounded-tl-[26px] rounded-br-[26px] rounded-tr-[4px] rounded-bl-[4px] overflow-hidden">
+          <div style="background-color: #00A256; border-radius: 44px 8px 44px 8px;"
+            class="p-3 flex flex-col justify-between shadow-md transition-transform duration-300 hover:-translate-y-1 overflow-hidden">
+            <div style="border-radius: 34px 3px 34px 3px;"
+              class="relative w-full h-[280px] overflow-hidden">
               <img src="./public/assets/industry-nutrition.png" alt="Nutrition Brands"
                 class="w-full h-full object-cover">
             </div>
@@ -718,10 +718,10 @@
           </div>
 
           <!-- Pharmaceutical -->
-          <div style="background-color: #00A256;"
-            class="rounded-tl-[36px] rounded-br-[36px] rounded-tr-[8px] rounded-bl-[8px] p-3 flex flex-col justify-between shadow-md transition-transform duration-300 hover:-translate-y-1">
-            <div
-              class="relative w-full h-[280px] rounded-tl-[26px] rounded-br-[26px] rounded-tr-[4px] rounded-bl-[4px] overflow-hidden">
+          <div style="background-color: #00A256; border-radius: 44px 8px 44px 8px;"
+            class="p-3 flex flex-col justify-between shadow-md transition-transform duration-300 hover:-translate-y-1 overflow-hidden">
+            <div style="border-radius: 34px 3px 34px 3px;"
+              class="relative w-full h-[280px] overflow-hidden">
               <img src="./public/assets/industry-pharma.png" alt="Pharmaceutical" class="w-full h-full object-cover">
             </div>
             <div class="py-3 text-center">
@@ -730,10 +730,10 @@
           </div>
 
           <!-- Personal Care -->
-          <div style="background-color: #00A256;"
-            class="rounded-tl-[36px] rounded-br-[36px] rounded-tr-[8px] rounded-bl-[8px] p-3 flex flex-col justify-between shadow-md transition-transform duration-300 hover:-translate-y-1">
-            <div
-              class="relative w-full h-[280px] rounded-tl-[26px] rounded-br-[26px] rounded-tr-[4px] rounded-bl-[4px] overflow-hidden">
+          <div style="background-color: #00A256; border-radius: 44px 8px 44px 8px;"
+            class="p-3 flex flex-col justify-between shadow-md transition-transform duration-300 hover:-translate-y-1 overflow-hidden">
+            <div style="border-radius: 34px 3px 34px 3px;"
+              class="relative w-full h-[280px] overflow-hidden">
               <img src="./public/assets/industry-personal-care.png" alt="Personal Care"
                 class="w-full h-full object-cover">
             </div>
@@ -743,10 +743,10 @@
           </div>
 
           <!-- Industrial Applications -->
-          <div style="background-color: #00A256;"
-            class="rounded-tl-[36px] rounded-br-[36px] rounded-tr-[8px] rounded-bl-[8px] p-3 flex flex-col justify-between shadow-md transition-transform duration-300 hover:-translate-y-1">
-            <div
-              class="relative w-full h-[280px] rounded-tl-[26px] rounded-br-[26px] rounded-tr-[4px] rounded-bl-[4px] overflow-hidden">
+          <div style="background-color: #00A256; border-radius: 44px 8px 44px 8px;"
+            class="p-3 flex flex-col justify-between shadow-md transition-transform duration-300 hover:-translate-y-1 overflow-hidden">
+            <div style="border-radius: 34px 3px 34px 3px;"
+              class="relative w-full h-[280px] overflow-hidden">
               <img src="./public/assets/industry-industrial.png" alt="Industrial Applications"
                 class="w-full h-full object-cover">
             </div>
@@ -1217,336 +1217,484 @@
       </div>
     </div>
 
-    <!-- Mobile Who We Are -->
-    <section class="w-full bg-[#FDFBF3] py-12 px-6 flex flex-col items-center border-b border-gray-100">
+    <!-- Mobile Who We Are matching Target Picture 1 -->
+    <section class="w-full bg-white py-12 px-6 flex flex-col items-start border-b border-gray-100">
       <div class="flex items-center gap-3 mb-4">
         <div class="w-[5px] h-[28px] bg-[#FF8D00] rounded-full"></div>
         <span class="font-montserrat font-bold text-[14px] text-starizo-brown uppercase tracking-wider">WHO WE
           ARE</span>
       </div>
-      <h2 class="text-[22px] font-black text-center text-black leading-tight mb-4">
+
+      <h2 class="text-[22px] font-bold text-left text-black leading-[30px] tracking-tight mb-6">
         From Traditional Farming.<br>To Manufacturing Excellence
       </h2>
 
-      <!-- Factory Image (curved border) -->
-      <div
-        class="relative w-full max-w-[340px] h-[220px] border-2 border-starizo-green-start rounded-tl-[60px] rounded-br-[60px] rounded-tr-[12px] rounded-bl-[12px] p-1.5 bg-[#FDFBF3] mb-6">
-        <div
-          class="w-full h-full rounded-tl-[55px] rounded-br-[55px] rounded-tr-[8px] rounded-bl-[8px] overflow-hidden shadow-md">
-          <img src="./public/assets/home-who-we-are.png" alt="Starizo factory" class="w-full h-full object-cover">
-        </div>
-      </div>
-
-      <p class="text-[14px] font-medium text-black/70 leading-[22px] text-center mb-6">
+      <p class="text-[14px] font-medium text-black/80 leading-[24px] text-left mb-6">
         Agriculture shaped who we are. Innovation shapes what we do. STARIZO connects traditional farming knowledge with
-        modern manufacturing to produce quality rice ingredients.
+        modern manufacturing to produce quality rice ingredients. We source responsibly, process rigorously, and hold
+        every batch to standards that don't bend. This approach helps us deliver reliable products for various
+        industrial applications.
       </p>
 
       <a href="#"
-        class="h-[44px] bg-starizo-orange text-white font-bold text-[14px] px-6 rounded-full flex items-center justify-center gap-2 select-none mb-10">
+        class="h-[44px] bg-[#FF8D00] hover:bg-[#e07c00] text-white font-montserrat font-bold text-[14px] px-6 rounded-full flex items-center justify-center gap-2 select-none mb-8 shadow-sm">
         Learn More
         <svg class="w-4 h-4 stroke-current fill-none stroke-[2.5]" viewBox="0 0 24 24">
           <polyline points="9 18 15 12 9 6"></polyline>
         </svg>
       </a>
 
-      <!-- Stacked Stats badges -->
-      <div class="w-full max-w-[320px] flex flex-col gap-4">
-        <div class="flex items-center gap-4 bg-white border border-gray-100 p-4 rounded-[16px] shadow-sm">
-          <div
-            class="w-10 h-10 bg-[#00A256]/10 rounded-full flex items-center justify-center text-starizo-green-start shrink-0">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <circle cx="12" cy="12" r="10"></circle>
-              <path
-                d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
-              </path>
-            </svg>
+      <!-- Leaf-shaped Factory Photo Frame matching Target Picture 1 -->
+      <div class="mb-12">
+        <div
+          class="w-full h-full rounded-tl-[54px] rounded-br-[54px] rounded-tr-[6px] rounded-bl-[6px] overflow-hidden">
+          <img src="./public/assets/home-who-we-are.png" alt="Starizo plant facility"
+            class="w-full h-full object-cover">
+        </div>
+      </div>
+
+      <!-- 2x2 Stats Grid with Orange Vertical Dividers matching target image -->
+      <div class="w-full max-w-[350px] grid grid-cols-2 gap-y-8 gap-x-4 self-center">
+        <!-- Stat 1: 20+ Countries Served (Left column with orange vertical line on right) -->
+        <div class="flex items-center gap-3.5 relative pr-3 border-r-2 border-[#FF8D00]">
+          <img src="./public/assets/contries.svg" alt="Countries" class="w-9 h-9 shrink-0 object-contain">
+          <div class="flex flex-col min-w-0 gap-1">
+            <span class="font-montserrat font-bold text-[13px] text-black leading-tight whitespace-nowrap"><span
+                class="font-extrabold text-[15px]">20+</span> Countries</span>
+            <span
+              class="font-montserrat font-medium text-[12px] text-black/70 leading-tight mt-0.5 whitespace-nowrap">Served</span>
           </div>
-          <div>
-            <div class="text-[16px] font-black text-black">20+ Countries Served</div>
+          <!-- Orange Vertical Divider Line -->
+
+        </div>
+        <div class="absolute right-0 top-1 -translate-y-1/2 w-[3px] h-[36px] bg-[#FF8D00]"></div>
+        <!-- Stat 2: 100% Traceable Procurement (Right column) -->
+        <div class="flex items-center gap-3.5 pl-3">
+          <img src="./public/assets/trasable.svg" alt="Traceable" class="w-9 h-9 shrink-0 object-contain">
+          <div class="flex flex-col min-w-0">
+            <span class="font-montserrat font-bold text-[13px] text-black leading-tight whitespace-nowrap"><span
+                class="font-extrabold text-[15px]">100%</span> Traceable</span>
+            <span
+              class="font-montserrat font-medium text-[12px] text-black/70 leading-tight mt-0.5 whitespace-nowrap">Procurement</span>
           </div>
         </div>
-        <div class="flex items-center gap-4 bg-white border border-gray-100 p-4 rounded-[16px] shadow-sm">
-          <div
-            class="w-10 h-10 bg-[#00A256]/10 rounded-full flex items-center justify-center text-starizo-green-start shrink-0">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path
-                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
-              </path>
-              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-              <line x1="12" y1="22.08" x2="12" y2="12"></line>
-            </svg>
+
+        <!-- Stat 3: Multiple Industry Certifications (Left column with orange vertical line on right) -->
+        <div class="flex items-center gap-2.5 relative pr-3">
+          <img src="./public/assets/certificate.svg" alt="Certifications" class="w-9 h-9 shrink-0 object-contain">
+          <div class="flex flex-col min-w-0">
+            <span class="font-montserrat font-bold text-[13px] text-black leading-tight whitespace-nowrap">Multiple
+              Industry</span>
+            <span
+              class="font-montserrat font-medium text-[12px] text-black/70 leading-tight mt-0.5 whitespace-nowrap">Certifications</span>
           </div>
-          <div>
-            <div class="text-[16px] font-black text-black">100% Traceable Procurement</div>
+          <!-- Orange Vertical Divider Line -->
+          <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[3px] h-[36px] bg-[#FF8D00] rounded-full"></div>
+        </div>
+
+        <!-- Stat 4: Consistent Batch Quality (Right column) -->
+        <div class="flex items-center gap-2.5 pl-3">
+          <img src="./public/assets/batch-quality.svg" alt="Batch Quality" class="w-9 h-9 shrink-0 object-contain">
+          <div class="flex flex-col min-w-0">
+            <span
+              class="font-montserrat font-bold text-[13px] text-black leading-tight whitespace-nowrap">Consistent</span>
+            <span
+              class="font-montserrat font-medium text-[12px] text-black/70 leading-tight mt-0.5 whitespace-nowrap">Batch
+              Quality</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Mobile Product Ecosystem -->
-    <section class="w-full bg-[#FDFBF3] py-12 px-6 flex flex-col items-center border-b border-gray-100">
-      <div class="flex items-center gap-3 mb-4">
-        <div class="w-[5px] h-[28px] bg-[#FF8D00] rounded-full"></div>
-        <span class="font-montserrat font-bold text-[14px] text-starizo-brown uppercase tracking-wider">OUR PRODUCT
-          ECOSYSTEM</span>
-      </div>
+    <!-- Mobile Product Ecosystem matching Target Figma screenshot -->
+    <section
+      class="w-full bg-white py-12 px-6 flex flex-col items-center border-b border-gray-100 relative overflow-hidden">
 
-      <!-- Selector tabs vertical style on mobile -->
-      <div class="flex flex-col gap-2 w-full max-w-[340px] mb-8">
-        <button
-          class="w-full py-3 bg-white border-2 border-starizo-green-start text-starizo-green-start font-bold text-[14px] rounded-full shadow-sm">
-          Food & Beverage
-        </button>
-        <button class="w-full py-3 bg-white border border-gray-100 text-black/60 font-bold text-[14px] rounded-full">
-          Cosmetics & Personal Care
-        </button>
-      </div>
+      <!-- Background Looper lines graphic sweeping across -->
+      <img src="./public/assets/Looper-1.png" alt=""
+        class="absolute inset-0 w-full h-full object-cover opacity-15 pointer-events-none z-0">
 
-      <!-- Stacked Product Cards -->
-      <div class="w-full max-w-[340px] flex flex-col gap-6 mb-8">
-        <!-- Card 1 -->
-        <div class="bg-white border border-gray-100 rounded-[20px] shadow-sm p-5">
-          <div class="flex justify-between items-start mb-4">
-            <h4 class="text-[17px] font-black text-black">Rice Starch</h4>
-            <div class="w-[60px] h-[40px] overflow-hidden rounded-md shrink-0">
+      <div class="relative z-10 w-full max-w-[340px] flex flex-col items-center text-center">
+
+        <!-- Badge Header -->
+        <div class="flex items-center gap-3 mb-6 self-start">
+          <div class="w-[5px] h-[28px] bg-[#FF8D00] rounded-full"></div>
+          <span class="font-montserrat font-bold text-[14px] text-starizo-brown uppercase tracking-wider">OUR PRODUCT
+            ECOSYSTEM</span>
+        </div>
+
+        <!-- Pill Tabs Selector Stack (Food & Beverage active) -->
+        <div class="flex flex-col gap-3 w-full mb-6">
+          <!-- Active Food & Beverage Pill -->
+          <button
+            class="w-full h-[52px] bg-white rounded-full  flex items-center justify-start px-4 gap-3 text-[#FF8D00] font-montserrat font-bold text-[15px] select-none">
+            <span class="w-9 h-9 rounded-full   flex items-center justify-center shrink-0">
+              <img src="./public/assets/food-icon.svg" alt="" class="w-10 h-10">
+            </span>
+            <span>Food & Beverage</span>
+          </button>
+
+          <!-- Inactive Cosmetics & Personal Care Pill -->
+          <button
+            class="w-full h-[52px] bg-white  rounded-full shadow-sm flex items-center justify-start px-4 gap-3 text-[#5D3700] font-montserrat font-semibold text-[15px] select-none">
+            <span class="w-9 h-9 rounded-full border-2 border-gray-200 flex items-center justify-center shrink-0">
+              <img src="./public/assets/cosmitics-personal-icon.svg" alt="" class="w-10 h-10">
+            </span>
+            <span>Cosmetics & Personal Care</span>
+          </button>
+        </div>
+
+        <!-- Subtitle Paragraph -->
+        <p class="font-montserrat text-[14px] text-black leading-[22px] mb-8 text-center max-w-[320px]">
+          View our inventory of <strong class="font-bold text-black">rice-based ingredients engineered with care for
+            texture, nutrition, functionality, and formulation versatility.</strong>
+        </p>
+
+        <!-- Product Card matching Desktop layout (Soft off-white background with left badge + right text) -->
+        <div
+          class="w-full bg-[#FDFBF3] rounded-[20px] border border-[#EFE9DD] shadow-sm p-3.5 flex flex-row items-center gap-3.5 mb-8 text-left">
+          <!-- Left Badge Box -->
+          <div
+            class="w-[125px] min-w-[125px] h-[175px] shrink-0 bg-white rounded-tl-[6px] rounded-br-[6px] border border-gray-100 shadow-sm overflow-hidden p-2 flex flex-col justify-between items-center text-center">
+            <div class="w-full h-[105px] rounded-tl-[24px] rounded-br-[24px] overflow-hidden">
               <img src="./public/assets/product-rice-starch.png" alt="Rice Starch" class="w-full h-full object-cover">
             </div>
           </div>
-          <p class="text-[13px] font-medium text-black/70 leading-[18px] mb-4">
-            Clean-label starch with superior texture, stability, and process performance.
-          </p>
-          <div class="flex items-center justify-between pt-3 border-t border-gray-50">
-            <span class="text-[11px] font-bold text-black/50">Food • Bakery • Snacks</span>
-            <a href="#" class="text-[13px] font-bold text-starizo-orange flex items-center gap-0.5">
-              View
-              <svg class="w-3.5 h-3.5 fill-none stroke-current stroke-[2.5]" viewBox="0 0 24 24">
-                <polyline points="9 18 15 12 9 6"></polyline>
-              </svg>
-            </a>
-          </div>
-        </div>
 
-        <!-- Card 2 -->
-        <div class="bg-white border border-gray-100 rounded-[20px] shadow-sm p-5">
-          <div class="flex justify-between items-start mb-4">
-            <h4 class="text-[17px] font-black text-black">Rice Protein</h4>
-            <div class="w-[60px] h-[40px] overflow-hidden rounded-md shrink-0">
-              <img src="./public/assets/product-rice-protein.png" alt="Rice Protein" class="w-full h-full object-cover">
+          <!-- Right Content Box -->
+          <div class="flex-1 flex flex-col justify-between h-[175px] py-1 pr-10">
+            <div>
+              <h4 class="font-montserrat font-bold text-[18px] text-[#5D3700] leading-tight mb-1.5">Rice Starch</h4>
+              <p class="font-montserrat text-[12px] font-medium text-black/70 leading-[17px] mb-3">
+                Clean-label starch with superior texture, stability, and process performance.
+              </p>
+              <div
+                class="inline-block bg-white border border-[#E8E2D5] px-2.5 py-1 rounded-full font-montserrat font-medium text-[11px] text-black/80 mb-3 shadow-xs">
+                Food • Bakery • Snacks
+              </div>
             </div>
-          </div>
-          <p class="text-[13px] font-medium text-black/70 leading-[18px] mb-4">
-            Plant-based protein prepared for better nutritional strength and formulation efficiency.
-          </p>
-          <div class="flex items-center justify-between pt-3 border-t border-gray-50">
-            <span class="text-[11px] font-bold text-black/50">Nutrition • Functional</span>
-            <a href="#" class="text-[13px] font-bold text-starizo-orange flex items-center gap-0.5">
-              View
+
+            <a href="#"
+              class="font-montserrat font-bold text-[14px] text-[#FF8D00] hover:text-[#e07c00] flex items-center gap-1 transition duration-150 select-none">
+              View Product
               <svg class="w-3.5 h-3.5 fill-none stroke-current stroke-[2.5]" viewBox="0 0 24 24">
                 <polyline points="9 18 15 12 9 6"></polyline>
               </svg>
             </a>
           </div>
         </div>
-      </div>
 
-      <a href="#"
-        class="w-full max-w-[340px] h-[44px] bg-[#FDFBF3] border-2 border-starizo-orange text-starizo-orange font-bold text-[14px] rounded-full flex items-center justify-center gap-2 select-none">
-        Explore Products
-        <svg class="w-4 h-4 stroke-current fill-none stroke-[2.5]" viewBox="0 0 24 24">
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
-      </a>
+        <!-- Explore Products Pill Button -->
+        <a href="#"
+          class="h-[46px] bg-white border-2 border-[#FF8D00] hover:bg-[#FF8D00] hover:text-white text-[#FF8D00] font-montserrat font-bold text-[14px] px-8 rounded-full flex items-center justify-center gap-2 select-none shadow-sm transition duration-200">
+          Explore Products
+          <svg class="w-4 h-4 stroke-current fill-none stroke-[2.5]" viewBox="0 0 24 24">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+
+      </div>
     </section>
 
-    <!-- Mobile Industries We Serve -->
-    <section class="w-full bg-[#FDFBF3] py-12 px-6 flex flex-col items-center border-b border-gray-100">
+    <!-- Mobile Industries We Serve matching Target Figma Screenshot -->
+    <section class="w-full bg-white py-12 px-6 flex flex-col items-center border-b border-gray-100">
+
+      <!-- Heading -->
       <div class="flex items-center gap-3 mb-4">
         <div class="w-[5px] h-[28px] bg-[#FF8D00] rounded-full"></div>
-        <span class="font-montserrat font-bold text-[14px] text-starizo-brown uppercase tracking-wider">INDUSTRIES WE
-          SERVE</span>
+        <span class="font-montserrat font-bold text-[14px] text-[#5D3700] uppercase tracking-wider">
+          INDUSTRIES WE SERVE
+        </span>
       </div>
-      <h3 class="text-[22px] font-black text-center text-black mb-6">
-        Built To Perform Across Industries
-      </h3>
 
-      <!-- 2 Column Grid on Mobile with Green Leaf Structure -->
-      <div class="grid grid-cols-2 gap-4 w-full max-w-[340px] mb-8">
-        <!-- Food -->
-        <div style="background-color: #00A256;"
-          class="rounded-tl-[24px] rounded-br-[24px] rounded-tr-[4px] rounded-bl-[4px] p-2 flex flex-col justify-between shadow-sm">
-          <div
-            class="relative w-full h-[130px] rounded-tl-[18px] rounded-br-[18px] rounded-tr-[2px] rounded-bl-[2px] overflow-hidden">
+      <h3 class="text-[22px] font-bold text-center text-black leading-tight mb-10">
+           <!-- Cards -->
+      <div class="grid grid-cols-2 gap-5 w-full max-w-[390px] mb-10">
+
+        <!-- Card 1: Food Manufacturers -->
+        <div style="background-color: #00A256; border-radius: 42px 6px 42px 6px;"
+          class="p-3 shadow-lg overflow-hidden flex flex-col justify-between">
+          <div style="border-radius: 32px 2px 32px 2px;"
+            class="w-full h-[190px] overflow-hidden">
             <img src="./public/assets/industry-food.png" alt="Food Manufacturers" class="w-full h-full object-cover">
           </div>
-          <div class="py-2 text-center">
-            <h4 class="font-montserrat font-bold text-[12px] text-white leading-tight">Food Manufacturers</h4>
+          <div class="pt-3 pb-1 text-center">
+            <h4 class="font-montserrat font-bold text-[14px] text-white leading-tight">
+              Food Manufacturers
+            </h4>
           </div>
         </div>
 
-        <!-- Nutrition -->
-        <div style="background-color: #00A256;"
-          class="rounded-tl-[24px] rounded-br-[24px] rounded-tr-[4px] rounded-bl-[4px] p-2 flex flex-col justify-between shadow-sm">
-          <div
-            class="relative w-full h-[130px] rounded-tl-[18px] rounded-br-[18px] rounded-tr-[2px] rounded-bl-[2px] overflow-hidden">
+        <!-- Card 2: Nutrition Brands -->
+        <div style="background-color: #00A256; border-radius: 42px 6px 42px 6px;"
+          class="p-3 shadow-lg overflow-hidden flex flex-col justify-between">
+          <div style="border-radius: 32px 2px 32px 2px;"
+            class="w-full h-[190px] overflow-hidden">
             <img src="./public/assets/industry-nutrition.png" alt="Nutrition Brands" class="w-full h-full object-cover">
           </div>
-          <div class="py-2 text-center">
-            <h4 class="font-montserrat font-bold text-[12px] text-white leading-tight">Nutrition Brands</h4>
+          <div class="pt-3 pb-1 text-center">
+            <h4 class="font-montserrat font-bold text-[14px] text-white leading-tight">
+              Nutrition Brands
+            </h4>
           </div>
         </div>
 
-        <!-- Pharma -->
-        <div style="background-color: #00A256;"
-          class="rounded-tl-[24px] rounded-br-[24px] rounded-tr-[4px] rounded-bl-[4px] p-2 flex flex-col justify-between shadow-sm">
-          <div
-            class="relative w-full h-[130px] rounded-tl-[18px] rounded-br-[18px] rounded-tr-[2px] rounded-bl-[2px] overflow-hidden">
+        <!-- Card 3: Pharmaceutical -->
+        <div style="background-color: #00A256; border-radius: 42px 6px 42px 6px;"
+          class="p-3 shadow-lg overflow-hidden flex flex-col justify-between">
+          <div style="border-radius: 32px 2px 32px 2px;"
+            class="w-full h-[190px] overflow-hidden">
             <img src="./public/assets/industry-pharma.png" alt="Pharmaceutical" class="w-full h-full object-cover">
           </div>
-          <div class="py-2 text-center">
-            <h4 class="font-montserrat font-bold text-[12px] text-white leading-tight">Pharmaceutical</h4>
+          <div class="pt-3 pb-1 text-center">
+            <h4 class="font-montserrat font-bold text-[14px] text-white leading-tight">
+              Pharmaceutical
+            </h4>
           </div>
         </div>
 
-        <!-- Personal Care -->
-        <div style="background-color: #00A256;"
-          class="rounded-tl-[24px] rounded-br-[24px] rounded-tr-[4px] rounded-bl-[4px] p-2 flex flex-col justify-between shadow-sm">
-          <div
-            class="relative w-full h-[130px] rounded-tl-[18px] rounded-br-[18px] rounded-tr-[2px] rounded-bl-[2px] overflow-hidden">
+        <!-- Card 4: Personal Care -->
+        <div style="background-color: #00A256; border-radius: 42px 6px 42px 6px;"
+          class="p-3 shadow-lg overflow-hidden flex flex-col justify-between">
+          <div style="border-radius: 32px 2px 32px 2px;"
+            class="w-full h-[190px] overflow-hidden">
             <img src="./public/assets/industry-personal-care.png" alt="Personal Care"
               class="w-full h-full object-cover">
           </div>
-          <div class="py-2 text-center">
-            <h4 class="font-montserrat font-bold text-[12px] text-white leading-tight">Personal Care</h4>
+          <div class="pt-3 pb-1 text-center">
+            <h4 class="font-montserrat font-bold text-[14px] text-white leading-tight">
+              Personal Care
+            </h4>
           </div>
         </div>
-      </div>
 
-      <a href="#"
-        class="w-full max-w-[340px] h-[44px] bg-starizo-orange text-white font-bold text-[14px] rounded-full flex items-center justify-center gap-2 select-none shadow-sm">
-        Explore Applications
-        <svg class="w-4 h-4 stroke-current fill-none stroke-[2.5]" viewBox="0 0 24 24">
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
-      </a>
-    </section>
-
-    <!-- Mobile Global Ambition & Banner -->
-    <section class="w-full bg-[#FDFBF3] py-12 px-6 flex flex-col items-center border-b border-gray-100">
-      <div class="flex items-center gap-3 mb-4">
-        <div class="w-[5px] h-[28px] bg-[#FF8D00] rounded-full"></div>
-        <span class="font-montserrat font-bold text-[14px] text-starizo-brown uppercase tracking-wider">GLOBAL
-          AMBITION</span>
-      </div>
-      <h3 class="text-[22px] font-black text-center text-black mb-6">
-        Built In India. Designed For Global Manufacturing.
-      </h3>
-
-      <!-- 3 Collaged images stack adapted for mobile layout (Top-Left to Bottom-Right cascade) -->
-      <div class="relative w-full max-w-[340px] h-[240px] mb-8">
-        <!-- Worker top-left (FRONT z-30) -->
-        <div
-          class="absolute left-0 top-0 w-[190px] h-[130px] border-2 border-[#00A256] rounded-tl-[30px] rounded-br-[30px] rounded-tr-[6px] rounded-bl-[6px] overflow-hidden shadow-lg bg-white p-1 z-30">
-          <img src="./public/assets/ambition-worker.png" alt="Starizo worker"
-            class="w-full h-full object-cover rounded-tl-[25px] rounded-br-[25px] rounded-tr-[4px] rounded-bl-[4px]">
-        </div>
-        <!-- Table middle (z-20) -->
-        <div
-          class="absolute left-[40px] top-[45px] w-[190px] h-[130px] border-2 border-[#00A256]/70 rounded-tl-[30px] rounded-br-[30px] rounded-tr-[6px] rounded-bl-[6px] overflow-hidden shadow-md bg-white p-1 z-20">
-          <img src="./public/assets/ambition-table.png" alt="Breakfast table"
-            class="w-full h-full object-cover rounded-tl-[25px] rounded-br-[25px] rounded-tr-[4px] rounded-bl-[4px]">
-        </div>
-        <!-- Crop bottom-right (BACK z-10) -->
-        <div
-          class="absolute left-[80px] top-[90px] w-[190px] h-[130px] border-2 border-[#00A256]/40 rounded-tl-[30px] rounded-br-[30px] rounded-tr-[6px] rounded-bl-[6px] overflow-hidden shadow bg-white p-1 z-10">
-          <img src="./public/assets/ambition-crop.png" alt="Rice plant"
-            class="w-full h-full object-cover rounded-tl-[25px] rounded-br-[25px] rounded-tr-[4px] rounded-bl-[4px]">
-        </div>
-      </div>
-
-      <p class="text-[14px] font-medium text-black/70 leading-[22px] text-center mb-8 max-w-sm">
-        Industries now demand cleaner labels, traceability, and real ingredients. STARIZO is building systems to help
-        partners deliver this, with confidence and clarity.
-      </p>
-
-      <!-- Banner Card vertical on mobile matching Target Picture 1 -->
-      <div
-        class="w-full max-w-[340px] bg-[#00A256] rounded-[24px] overflow-hidden shadow-lg p-6 text-white flex flex-col items-center text-center relative">
-        <!-- Looper-1 background overlay (clipped by parent overflow-hidden) -->
-        <img src="./public/assets/Looper-1.png" alt=""
-          class="absolute inset-0  object-cover opacity-100 pointer-events-none select-none z-0">
-
-        <div class="relative z-10 w-full flex flex-col items-center">
-          <h4 class="text-[18px] font-bold mb-3 leading-tight">
-            Looking for an Efficient Rice Manufacturing Partner?
-          </h4>
-          <p class="text-[13px] font-medium text-white/90 leading-[20px] mb-6">
-            Whether you're crafting new formulations or scaling rice-based ingredient production, our team is ready to
-            help.
-          </p>
-
-          <!-- Banner Image curved inside leaf container with rice-g.png overlay -->
-          <div class="relative w-full h-[160px] mb-6">
-            <div
-              class="w-full h-full rounded-tl-[32px] rounded-br-[32px] rounded-tr-[6px] rounded-bl-[6px] overflow-hidden shadow-md">
-              <img src="./public/assets/partner-plant.png" alt="Starizo facility" class="w-full h-full object-cover">
+        <!-- Card 5: Industrial Applications -->
+        <div class="col-span-2 flex justify-center">
+          <div style="background-color: #00A256; border-radius: 42px 6px 42px 6px;"
+            class="w-[185px] p-3 shadow-lg overflow-hidden flex flex-col justify-between">
+            <div style="border-radius: 32px 2px 32px 2px;"
+              class="w-full h-[190px] overflow-hidden">
+              <img src="./public/assets/industry-industrial.png" alt="Industrial Applications"
+                class="w-full h-full object-cover">
             </div>
-            <!-- Golden Rice Stalk graphic (overlapping bottom-right corner) -->
-            <img src="./public/assets/rice-g.png" alt=""
-              class="absolute -right-2 -bottom-4 h-[90px] w-auto z-30 pointer-events-none select-none object-contain">
+            <div class="pt-3 pb-1 text-center">
+              <h4 class="font-montserrat font-bold text-[14px] text-white leading-tight">
+                Industrial Applications
+              </h4>
+            </div>
           </div>
-
-          <a href="#"
-            class="w-full h-[44px] bg-[#FF8D00] text-white font-bold text-[14px] rounded-full flex items-center justify-center gap-2 select-none shadow-sm">
-            Contact Us
-            <svg class="w-4 h-4 stroke-current fill-none stroke-[2.5]" viewBox="0 0 24 24">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-          </a>
         </div>
+
       </div>
+
+      <!-- Button -->
+      <a href="#"
+        class="h-[48px] px-8 rounded-full bg-[#FF8D00] hover:bg-[#E57E00] transition-all duration-300 shadow-md flex items-center gap-2 text-white font-montserrat font-bold text-[14px]">
+
+        Explore Applications
+
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+
+      </a>
+
     </section>
 
-    <!-- Mobile Insights -->
+    <!-- Mobile Global Ambition & Banner (Separated into 3 distinct block div containers) -->
+    <section class="w-full bg-[#FDFBF3] py-12 px-6 flex flex-col items-center border-b border-gray-100">
+      
+      <!-- Block 1: Header, Main Title & Paragraph Text Container -->
+      <div class="w-full max-w-[340px] flex flex-col items-start mb-6">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-[5px] h-[28px] bg-[#FF8D00] rounded-full"></div>
+          <span class="font-montserrat font-bold text-[14px] text-starizo-brown uppercase tracking-wider">GLOBAL AMBITION</span>
+        </div>
+
+        <h3 class="text-[22px] font-bold text-left text-black leading-[30px] mb-4">
+          Built In India. Designed For Global Manufacturing.
+        </h3>
+
+        <p class="text-[14px] font-medium text-black/80 leading-[24px] text-left">
+          Industries now demand cleaner labels, traceability, and real ingredients. STARIZO is building systems to help partners deliver this, with confidence and clarity.
+        </p>
+      </div>
+
+      <!-- Block 2: 3-Card Stepped Stack using Desktop Percentage-Based Geometry -->
+      <div class="w-full max-w-[340px] flex justify-center mb-10">
+        <div class="relative w-full h-[260px] max-w-[320px]">
+          <!-- Card 1: Worker (Top-Left, FRONT z-30) -->
+          <div class="absolute z-30 overflow-hidden bg-white shadow-xl
+            border-[2.5px] border-[#00A256]
+            rounded-tl-[32px] rounded-br-[32px] rounded-tr-[6px] rounded-bl-[6px]"
+            style="left: 0%; top: 0%; width: 82%; height: 56%;">
+            <img src="./public/assets/ambition-worker.png" alt="Starizo worker" class="w-full h-full object-cover
+              rounded-tl-[26px] rounded-br-[26px] rounded-tr-[4px] rounded-bl-[4px]">
+          </div>
+
+          <!-- Card 2: Table (Middle, z-20) -->
+          <div class="absolute z-20 overflow-hidden bg-white shadow-md
+            border-[2.5px] border-[#00A256]/70
+            rounded-tl-[32px] rounded-br-[32px] rounded-tr-[6px] rounded-bl-[6px]"
+            style="left: 9%; top: 22%; width: 82%; height: 56%;">
+            <img src="./public/assets/ambition-table.png" alt="Breakfast table" class="w-full h-full object-cover
+              rounded-tl-[26px] rounded-br-[26px] rounded-tr-[4px] rounded-bl-[4px]">
+          </div>
+
+          <!-- Card 3: Rice Crop (Bottom-Right, BACK z-10) -->
+          <div class="absolute z-10 overflow-hidden bg-white shadow
+            border-[2.5px] border-[#00A256]/40
+            rounded-tl-[32px] rounded-br-[32px] rounded-tr-[6px] rounded-bl-[6px]"
+            style="left: 18%; top: 44%; width: 82%; height: 56%;">
+            <img src="./public/assets/ambition-crop.png" alt="Rice plant" class="w-full h-full object-cover
+              rounded-tl-[26px] rounded-br-[26px] rounded-tr-[4px] rounded-bl-[4px]">
+          </div>
+        </div>
+      </div>
+
+      <!-- Block 3: Manufacturing Partner Banner Card Container -->
+      <div class="w-full max-w-[340px] mt-2">
+        <div
+          class="w-full bg-[#00A256] rounded-[28px] overflow-hidden shadow-xl p-6 text-white flex flex-col items-start text-left relative">
+          
+          <!-- Looper-1 background overlay (opacity-20 swept across left) -->
+          <img src="./public/assets/Looper-1.png" alt=""
+            class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none select-none z-0">
+
+          <div class="relative z-10 w-full flex flex-col items-start">
+            <h4 class="text-[20px] font-bold mb-3 leading-[28px] text-white">
+              Looking for an Efficient Rice Manufacturing Partner?
+            </h4>
+            <p class="text-[13px] font-medium text-white/90 leading-[20px] mb-6 pr-2">
+              Whether you're crafting new formulations or scaling rice-based ingredient production, our team is ready to help you advance with confidence.
+            </p>
+
+            <!-- CTA Button: Talk to Our Team -->
+            <a href="#"
+              class="h-[44px] bg-[#FF8D00] hover:bg-[#e07c00] text-white font-montserrat font-bold text-[14px] px-6 rounded-full flex items-center justify-center gap-2 select-none shadow-md mb-8">
+              Talk to Our Team
+              <svg class="w-4 h-4 stroke-current fill-none stroke-[2.5]" viewBox="0 0 24 24">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+
+            <!-- Banner Image Frame at Bottom with rice-g.png overlay -->
+            <div class="relative w-full h-[175px]">
+              <div
+                class="w-full h-full rounded-tl-[32px] rounded-br-[32px] rounded-tr-[6px] rounded-bl-[6px] overflow-hidden shadow-md bg-white">
+                <img src="./public/assets/partner-plant.png" alt="Starizo facility" class="w-full h-full object-cover">
+              </div>
+              <!-- Golden Rice Stalk graphic (overlapping bottom-right corner) -->
+              <img src="./public/assets/rice-g.png" alt=""
+                class="absolute right-0 -bottom-3 h-[85px] w-auto z-20 pointer-events-none select-none object-contain drop-shadow-md">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Mobile Insights matching Desktop Architecture in Column Layout -->
     <section class="w-full bg-[#FDFBF3] py-12 px-6 flex flex-col items-center border-b border-gray-100">
       <div class="flex items-center gap-3 mb-4">
         <div class="w-[5px] h-[28px] bg-[#FF8D00] rounded-full"></div>
         <span class="font-montserrat font-bold text-[14px] text-starizo-brown uppercase tracking-wider">INSIGHTS</span>
       </div>
-      <h3 class="text-[22px] font-black text-center text-black mb-8">
-        Latest Articles & Publications
+      <h3 class="text-[22px] font-bold text-center text-black leading-tight mb-8">
+        Latest Articles & Technical Publications
       </h3>
 
-      <!-- 3 stacked article cards -->
+      <!-- All 3 Insights Cards in Column Layout -->
       <div class="w-full max-w-[340px] flex flex-col gap-6 mb-8">
+        
         <!-- Card 1 -->
-        <div class="bg-white border border-gray-100 rounded-[20px] overflow-hidden shadow-sm">
-          <div class="w-full h-[160px] overflow-hidden rounded-b-[30px]">
-            <img src="./public/assets/insight-clean-label.png" alt="" class="w-full h-full object-cover">
+        <div class="bg-white border border-gray-100/70 rounded-[28px] overflow-hidden shadow-sm flex flex-col justify-between">
+          <!-- Image with rounded bottom-left corner matching Desktop -->
+          <div class="w-full h-[180px] overflow-hidden rounded-t-[28px] rounded-bl-[45px]">
+            <img src="./public/assets/insight-clean-label.png" alt="Clean Label Shift" class="w-full h-full object-cover">
           </div>
-          <div class="p-5">
-            <span class="text-[9px] font-bold text-starizo-green-start uppercase tracking-wider block mb-1">FEATURED
-              ARTICLE</span>
-            <h4 class="text-[15px] font-black text-black leading-snug tracking-tight mb-2">
-              The Clean Label Shift Is Bigger Than Ingredients
-            </h4>
-            <p class="text-[12px] font-medium text-black/60 leading-[18px] mb-4">
-              Consumers may read labels—but manufacturers build trust through sourcing, process discipline, and
-              ingredient decisions.
-            </p>
-            <a href="#" class="text-[13px] font-bold text-starizo-orange flex items-center gap-0.5">
-              Read More
-              <svg class="w-3.5 h-3.5 fill-none stroke-current stroke-[2.5]" viewBox="0 0 24 24">
-                <polyline points="9 18 15 12 9 6"></polyline>
-              </svg>
-            </a>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-bold text-[#00A256] uppercase tracking-wider mb-2 block">FEATURED ARTICLE</span>
+              <h4 class="text-[16px] font-bold text-black leading-snug tracking-tight mb-2">
+                The Clean Label Shift Is Bigger Than Ingredients
+              </h4>
+              <p class="text-[12px] font-medium text-black/60 leading-[18px] mb-4">
+                Consumers may read labels—but manufacturers build trust through sourcing, process discipline, and ingredient decisions.
+              </p>
+            </div>
+            <div>
+              <div class="text-[11px] font-semibold text-black/40 mb-3">August 20, 2022 | 3 min read | Insight</div>
+              <a href="#" class="text-[13px] font-bold text-[#FF8D00] hover:text-[#e07c00] flex items-center gap-1 transition duration-150">
+                Read More
+                <svg class="w-3.5 h-3.5 fill-none stroke-current stroke-[2.5]" viewBox="0 0 24 24">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white border border-gray-100/70 rounded-[28px] overflow-hidden shadow-sm flex flex-col justify-between">
+          <div class="w-full h-[180px] overflow-hidden rounded-t-[28px] rounded-bl-[45px]">
+            <img src="./public/assets/insight-starch-texture.png" alt="Rice Starch Texture" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-bold text-[#00A256] uppercase tracking-wider mb-2 block">FEATURED ARTICLE</span>
+              <h4 class="text-[16px] font-bold text-black leading-snug tracking-tight mb-2">
+                How Rice Starch Changes Texture Performance
+              </h4>
+              <p class="text-[12px] font-medium text-black/60 leading-[18px] mb-4">
+                Understanding granule behavior across formulations. Understanding granule behavior across formulations.
+              </p>
+            </div>
+            <div>
+              <div class="text-[11px] font-semibold text-black/40 mb-3">August 20, 2022 | 3 min read | Insight</div>
+              <a href="#" class="text-[13px] font-bold text-[#FF8D00] hover:text-[#e07c00] flex items-center gap-1 transition duration-150">
+                Read More
+                <svg class="w-3.5 h-3.5 fill-none stroke-current stroke-[2.5]" viewBox="0 0 24 24">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white border border-gray-100/70 rounded-[28px] overflow-hidden shadow-sm flex flex-col justify-between">
+          <div class="w-full h-[180px] overflow-hidden rounded-t-[28px] rounded-bl-[45px]">
+            <img src="./public/assets/insight-bakery-systems.png" alt="Bakery Systems" class="w-full h-full object-cover">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] font-bold text-[#00A256] uppercase tracking-wider mb-2 block">APPLICATIONS</span>
+              <h4 class="text-[16px] font-bold text-black leading-snug tracking-tight mb-2">
+                Building Better Bakery Systems
+              </h4>
+              <p class="text-[12px] font-medium text-black/60 leading-[18px] mb-4">
+                Every application behaves differently. That is why our rice-derived ingredient portfolio is designed to solve practical.
+              </p>
+            </div>
+            <div>
+              <div class="text-[11px] font-semibold text-black/40 mb-3">August 20, 2022 | 3 min read | Insight</div>
+              <a href="#" class="text-[13px] font-bold text-[#FF8D00] hover:text-[#e07c00] flex items-center gap-1 transition duration-150">
+                Read More
+                <svg class="w-3.5 h-3.5 fill-none stroke-current stroke-[2.5]" viewBox="0 0 24 24">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
 
+      <!-- Read More Button -->
       <a href="#"
-        class="w-full max-w-[340px] h-[44px] bg-starizo-orange text-white font-bold text-[14px] rounded-full flex items-center justify-center gap-2 select-none shadow-sm">
-        Read More Articles
+        class="h-[46px] bg-[#FF8D00] hover:bg-[#e07c00] text-white font-montserrat font-bold text-[14px] px-8 rounded-full flex items-center justify-center gap-2 select-none shadow-md transition duration-200">
+        Read More
         <svg class="w-4 h-4 stroke-current fill-none stroke-[2.5]" viewBox="0 0 24 24">
           <polyline points="9 18 15 12 9 6"></polyline>
         </svg>
@@ -1555,9 +1703,9 @@
 
     <!-- Mobile Footer -->
     <footer class="w-full bg-[#FDF7E9] text-black">
-      
+
       <div class="px-6 pt-10 pb-12 w-full max-w-[341px] mx-auto">
-        
+
         <!-- Brand Logo -->
         <a href="#" class="inline-block mb-8" aria-label="Starizo Home">
           <img src="./public/assets/logo.svg" alt="starizo™" class="h-9 w-auto">
@@ -1569,14 +1717,18 @@
           <!-- Column 1 (Left) -->
           <div class="flex flex-col">
             <!-- Products -->
-            <h4 class="font-montserrat font-bold text-[12px] leading-[20px] tracking-[0em] text-black mb-3">Products</h4>
-            <ul class="flex flex-col gap-2 mb-6 font-montserrat font-normal text-[12px] leading-[20px] tracking-[0em] text-black/80">
+            <h4 class="font-montserrat font-bold text-[12px] leading-[20px] tracking-[0em] text-black mb-3">Products
+            </h4>
+            <ul
+              class="flex flex-col gap-2 mb-6 font-montserrat font-normal text-[12px] leading-[20px] tracking-[0em] text-black/80">
               <li><a href="#" class="hover:text-starizo-orange transition-colors">Food &amp; Beverage</a></li>
-              <li><a href="#" class="hover:text-starizo-orange transition-colors leading-[16px]">Cosmetics &amp;<br>Personal Care</a></li>
+              <li><a href="#" class="hover:text-starizo-orange transition-colors leading-[16px]">Cosmetics
+                  &amp;<br>Personal Care</a></li>
             </ul>
 
             <!-- Single Line Bold Links -->
-            <div class="flex flex-col gap-3 font-montserrat font-bold text-[12px] leading-[20px] tracking-[0em] text-black mb-6">
+            <div
+              class="flex flex-col gap-3 font-montserrat font-bold text-[12px] leading-[20px] tracking-[0em] text-black mb-6">
               <a href="#" class="hover:text-starizo-orange transition-colors">Partner with Us</a>
               <a href="#" class="hover:text-starizo-orange transition-colors">Plant</a>
               <a href="/careers.html" class="hover:text-starizo-orange transition-colors">Careers</a>
@@ -1586,12 +1738,14 @@
 
             <!-- Contact Details -->
             <div class="flex flex-col col-span-2 mt-2">
-              <h4 class="font-montserrat font-bold text-[12px] leading-[20px] tracking-[0em] text-black mb-3">Contact Details</h4>
+              <h4 class="font-montserrat font-bold text-[12px] leading-[20px] tracking-[0em] text-black mb-3">Contact
+                Details</h4>
               <div class="w-[312px] h-[29px] flex items-center gap-[12px] whitespace-nowrap">
                 <img src="./public/assets/mail-icon.svg" alt="Email" class="w-[29px] h-[29px] shrink-0">
                 <p class="font-montserrat text-[12px] leading-[20px] tracking-[0em]">
                   <span class="font-bold text-black">Email: </span>
-                  <a href="mailto:sales@starizo.com" class="font-normal text-black/80 hover:underline">sales@starizo.com</a>
+                  <a href="mailto:sales@starizo.com"
+                    class="font-normal text-black/80 hover:underline">sales@starizo.com</a>
                 </p>
               </div>
             </div>
@@ -1601,7 +1755,8 @@
           <div class="flex flex-col">
             <!-- About -->
             <h4 class="font-montserrat font-bold text-[12px] leading-[20px] tracking-[0em] text-black mb-3">About</h4>
-            <ul class="flex flex-col gap-2 font-montserrat font-normal text-[12px] leading-[20px] tracking-[0em] text-black/80">
+            <ul
+              class="flex flex-col gap-2 font-montserrat font-normal text-[12px] leading-[20px] tracking-[0em] text-black/80">
               <li><a href="#" class="hover:text-starizo-orange transition-colors">Our Story</a></li>
               <li><a href="#" class="hover:text-starizo-orange transition-colors">Research Lab</a></li>
               <li><a href="#" class="hover:text-starizo-orange transition-colors">Technology &amp; Quality</a></li>
@@ -1613,7 +1768,8 @@
       </div>
 
       <!-- Copyright Bottom Bar -->
-      <div class="w-full bg-[#5D3700] text-white py-3 px-6 font-montserrat font-normal text-[10px] leading-[20px] tracking-[0em]">
+      <div
+        class="w-full bg-[#5D3700] text-white py-3 px-6 font-montserrat font-normal text-[10px] leading-[20px] tracking-[0em]">
         <div class="w-full max-w-[341px] mx-auto flex flex-row items-center justify-between gap-2 whitespace-nowrap">
           <span>© 2026 Starizo | All Rights Reserved.</span>
           <div class="flex items-center gap-1 shrink-0">
