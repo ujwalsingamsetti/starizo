@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-montserrat bg-starizo-bg text-black;
+  }
+}
+
+@layer utilities {
+  .leaf-shape {
+    border-radius: 34px 0px 34px 34px;
+  }
+  .leaf-shape-reverse {
+    border-radius: 0px 34px 34px 34px;
+  }
+  .leaf-shape-01 {
+    border-radius: 30px 0px 30px 0px;
+  }
+  .leaf-shape-02 {
+    border-radius: 30px 0px 30px 0px;
+  }
+  .leaf-shape-03 {
+    border-radius: 30px 0px 30px 0px;
+  }
+  .leaf-shape-04 {
+    border-radius: 30px 0px 30px 0px;
+  }
+  .hero-mask-path {
+    clip-path: ellipse(80% 100% at 80% 50%);
+  }
+}
+
