@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — STARIZO | Clean-Label Rice Ingredient Innovation</title>
+  <meta name="description"
+    content="For more than three decades, STARIZO has refined how rice is sourced, processed, and transformed into next-generation clean-label ingredients.">
+
+  <!-- Google Fonts: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./dist/assets/style.css">
+  <link rel="stylesheet" href="./src/style.css">
+
+  <style>
+    /* Convex Leaf Frame Corner Radii matching Figma Spec 1:1 */
+    .hero-leaf-frame {
+      border-top-left-radius: 240px;
+      border-bottom-right-radius: 240px;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+    }
+
+    .hero-leaf-frame-mobile {
+      border-top-left-radius: 120px;
+      border-bottom-right-radius: 120px;
+      border-top-right-radius: 16px;
+      border-bottom-left-radius: 16px;
+    }
+  </style>
+</head>
+
+<body
+  class="font-montserrat bg-[#FDFBF3] text-black antialiased overflow-x-hidden selection:bg-[#FF8D00] selection:text-white">
+
+  <!-- ==================== DESKTOP LAYOUT VIEW (xl: 1280px+ screens) ==================== -->
+  <div class="hidden xl:block w-full">
+
+    <!-- ==================== HERO SECTION (FIGMA SPEC 1:1) ==================== -->
+  <main class="w-full pt-0 pb-0">
+
+    <div
+      class="w-full min-h-[840px] lg:min-h-[880px] bg-[#00A256] overflow-hidden relative shadow-2xl px-6 sm:px-10 md:px-14 lg:px-16 pt-4 sm:pt-6 md:pt-8 pb-16 text-white flex flex-col justify-between">
+
+      <!-- Layer 1: Green Rice Field Background Texture -->
+      <img src="./public/assets/hero-rice-field-bg.png" alt=""
+        class="absolute inset-0 w-full h-full object-cover opacity-35 pointer-events-none select-none z-0 mix-blend-overlay">
+
+      <!-- Layer 1B: Solid Green Free Space Band at Top of Rice Crop -->
+      <div
+        class="absolute top-0 inset-x-0 h-[180px] sm:h-[220px] bg-gradient-to-b from-[#00A256] via-[#00A256]/90 to-transparent z-2 pointer-events-none">
+      </div>
+
+      <!-- Layer 2: Golden Looper Wave Graphic (Left-aligned) -->
+      <img src="./public/assets/Looper-1.png" alt=""
+        class="absolute top-0 left-0 w-[60%] h-full object-cover object-left opacity-30 pointer-events-none select-none z-1">
+
+      <!-- Floating Navbar (Copied Directly from Careers Page) -->
+      <header class="relative z-30 pt-2 sm:pt-4 mb-12 sm:mb-16 md:mb-20">
+        <div id="navbar"
+          class="w-full max-w-[1240px] mx-auto h-[85px] bg-white rounded-[26px] shadow-[0px_4px_44.6px_0px_rgba(0,0,0,0.05)] border border-gray-100 flex items-center justify-between px-6 md:px-10">
+
+          <a href="./index.html" class="flex items-center gap-2 focus:outline-none" aria-label="Starizo Home">
+            <img src="./public/assets/logo.svg" alt="starizo™" class="h-9 w-auto">
+          </a>
+
+          <nav class="flex items-center gap-8 xl:gap-10">
+            <div class="relative group">
+              <button
+                class="text-[18px] text-starizo-brown hover:text-starizo-orange flex items-center gap-1 font-medium transition duration-200">
+                Products
+                <svg class="w-4 h-4 fill-current transform rotate-180" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 14l5-5 5 5H7z" />
+                </svg>
+              </button>
+            </div>
+            <a href="./about.html"
+              class="text-[18px] font-bold text-starizo-orange underline decoration-2 underline-offset-8 transition duration-200">About</a>
+            <a href="./index.html#partner"
+              class="text-[18px] text-starizo-brown hover:text-starizo-orange font-medium transition duration-200">Partner
+              with Us</a>
+            <a href="./index.html#research"
+              class="text-[18px] text-starizo-brown hover:text-starizo-orange font-medium transition duration-200">Research
+              Lab</a>
+            <a href="./careers.html"
+              class="text-[18px] text-starizo-brown hover:text-starizo-orange font-medium transition duration-200">Careers</a>
+            <a href="./index.html#insights"
+              class="text-[18px] text-starizo-brown hover:text-starizo-orange font-medium transition duration-200">Insights</a>
+          </nav>
+
+          <div class="flex items-center gap-4">
+            <a href="./careers.html#contact"
+              class="bg-starizo-orange hover:bg-starizo-orange-dark text-white font-semibold text-[18px] px-6 py-2.5 rounded-[22px] transition-all duration-300 flex items-center gap-2 group select-none">
+              Contact Us
+              <svg class="w-4 h-4 fill-current transform group-hover:translate-x-0.5 transition-transform duration-200"
+                viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.15736 2.93105L9.76836 7.61605C9.86948 7.71827 9.92621 7.85626 9.92621 8.00005C9.92621 8.14384 9.86948 8.28183 9.76836 8.38405L5.15835 13.0691C5.05728 13.1719 5.00064 13.3103 5.00064 13.4546C5.00064 13.5988 5.05728 13.7372 5.15835 13.8401C5.20773 13.8907 5.26675 13.931 5.33192 13.9584C5.3971 13.9859 5.46712 14.0001 5.53786 14.0001C5.60859 14.0001 5.67861 13.9859 5.74379 13.9584C5.80896 13.931 5.86798 13.8907 5.91735 13.8401L10.5274 9.15605C10.8303 8.84753 11 8.43243 11 8.00005C11 7.56768 10.8303 7.15257 10.5274 6.84405L5.91736 2.16005C5.86796 2.10925 5.80889 2.06887 5.74362 2.04129C5.67835 2.01372 5.60821 1.99951 5.53736 1.99951C5.4665 1.99951 5.39636 2.01372 5.3311 2.04129C5.26583 2.06887 5.20675 2.10925 5.15736 2.16005C5.05628 2.26291 4.99964 2.40135 4.99964 2.54555C4.99964 2.68976 5.05628 2.8282 5.15736 2.93105Z"
+                  fill="currentColor" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Content Grid -->
+      <div
+        class="relative z-10 w-full max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center py-6 sm:py-10">
+
+        <div class="lg:col-span-7 flex flex-col items-start text-left">
+          <!-- Badge Header without Orange Accent Bar -->
+          <div class="flex items-center mb-4">
+            <span class="font-montserrat uppercase"
+              style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 14px; line-height: 22px; letter-spacing: 0.11em; text-transform: uppercase; color: #FBEAC4;">
+              ABOUT US
+            </span>
+          </div>
+
+          <!-- Main Heading (Exact Specs: Montserrat 900 Black, 42px size, 54px line-height) -->
+          <h1 class="font-montserrat font-black text-white mb-6 max-w-xl"
+            style="font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 42px; line-height: 54px; letter-spacing: 0; color: #FFFFFF;">
+            Transforming Rice Into Global Ingredient Innovation
+          </h1>
+
+          <!-- Subtitle Paragraph (Exact Specs: Montserrat 500 Medium, 18px size, 30px line-height) -->
+          <p class="font-montserrat font-medium text-white/95 mb-8 max-w-lg"
+            style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 18px; line-height: 30px; letter-spacing: 0;">
+            Built on decades of rice processing expertise, STARIZO develops clean-label, rice-derived ingredients
+            designed for modern industries and global manufacturing.
+          </p>
+
+          <!-- Action Buttons Group (Horizontal row: Width 380px, Height 45px, Gap 19px) -->
+          <div class="flex flex-row items-center"
+            style="width: 380px; max-width: 100%; height: 45px; gap: 19px; opacity: 1;">
+
+            <!-- Explore Products (Width 209px, Height 45px, Border 1px #FFFFFF, Radius 22px, Blur 4px) -->
+            <a href="./index.html#products"
+              class="font-montserrat font-semibold text-white flex items-center justify-center transition duration-200 select-none shrink-0"
+              style="width: 209px; height: 45px; border-radius: 22px; border: 1px solid #FFFFFF; padding: 12px; gap: 10px; opacity: 1; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 15px; sm:font-size: 16px; line-height: 21px; letter-spacing: 0;">
+              Explore Products
+              <svg class="w-4 h-4 stroke-current fill-none stroke-[2.5] shrink-0" viewBox="0 0 24 24">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+
+            <!-- Contact Us (Width 152px, Height 45px, Background #FF8D00, Radius 22px) -->
+            <a href="./careers.html#contact"
+              class="font-montserrat font-semibold text-white flex items-center justify-center transition duration-200 shadow-md select-none shrink-0"
+              style="width: 152px; height: 45px; border-radius: 22px; background-color: #FF8D00; padding: 12px; gap: 10px; opacity: 1; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 15px; sm:font-size: 16px; line-height: 21px; letter-spacing: 0;">
+              Contact Us
+              <svg class="w-4 h-4 stroke-current fill-none stroke-[2.5] shrink-0" viewBox="0 0 24 24">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 flex justify-center lg:justify-end items-center overflow-visible">
+          <div class="relative w-full max-w-[420px] lg:max-w-[480px] aspect-[4/3] sm:aspect-[1.15] overflow-visible">
+
+            <!-- Leaf Photo Frame -->
+            <div class="w-full h-full hero-leaf-frame overflow-hidden relative z-10">
+              <img src="./public/assets/hero-farmer-leaf-photo.png" alt="Starizo Rice Field Farmer"
+                class="w-full h-full object-cover hero-leaf-frame">
+            </div>
+
+            <!-- about-leaf.png: z-20, at bottom-left edge, extending further left -->
+            <img src="./public/assets/about-leaf.png" alt=""
+              class="absolute -bottom-6 -left-12 w-[130px] sm:w-[150px] h-auto pointer-events-none select-none z-20 opacity-70"
+              style="filter: brightness(0) invert(1); -webkit-filter: brightness(0) invert(1);">
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ==================== SECTION 2: OUR STORY ==================== -->
+    <section class="w-full bg-[#FDFBF3] py-16 md:py-20 border-b border-gray-100">
+      <div class="mx-auto px-4 sm:px-6 flex flex-col items-center text-center"
+        style="max-width: 1116px; width: 100%; min-height: 288px; gap: 12px; opacity: 1;">
+
+        <!-- Badge Header (Centered with Bright Orange Bar) -->
+        <div class="flex items-center justify-center gap-3">
+          <div class="shrink-0" style="background-color: #FF8D00; width: 4px; height: 28px; border-radius: 9999px;">
+          </div>
+          <span class="font-montserrat font-normal text-[22px] uppercase text-center"
+            style="color: #A46C20; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 22px; line-height: 54px; letter-spacing: 0.11em; text-align: center; text-transform: uppercase;">OUR
+            STORY</span>
+        </div>
+
+        <!-- Headline (Centered) -->
+        <h2 class="font-montserrat font-bold text-[22px] text-black text-center max-w-[1050px]"
+          style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 22px; line-height: 30px; letter-spacing: 0; text-align: center;">
+          What began as expertise in rice processing evolved into a next-generation ingredient platform.
+        </h2>
+
+        <!-- Body Content Paragraphs (Centered with 12px gap) -->
+        <div class="flex flex-col items-center text-center max-w-[1050px]" style="gap: 12px;">
+          <p class="font-montserrat font-medium text-[18px] text-black/80 text-center"
+            style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 18px; line-height: 30px; letter-spacing: 0; text-align: center;">
+            For more than three decades, the foundation behind STARIZO has refined how rice is sourced, processed, and
+            transformed. Today, STARIZO extends that legacy into specialized clean-label ingredients developed for food,
+            nutrition, pharma, and industrial innovators worldwide.
+          </p>
+
+          <p class="font-montserrat font-medium text-[18px] text-black/80 text-center"
+            style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 18px; line-height: 30px; letter-spacing: 0; text-align: center;">
+            This evolution is not simply manufacturing expansion—it represents a shift toward creating smarter
+            ingredient ecosystems that deliver consistency, transparency, and performance.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 3: INSIDE STARIZO ==================== -->
+    <section class="w-full bg-[#FDFBF3] py-16 md:py-24 border-b border-gray-100">
+      <div class="mx-auto px-4 sm:px-6 mb-14" style="max-width: 1116px; width: 100%; min-height: 102px; opacity: 1;">
+
+        <!-- Strict Horizontal Row Format (Left: INSIDE STARIZO, Right: Heading & Subtitle) -->
+        <div class="flex flex-row items-start justify-between w-full"
+          style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; width: 100%; gap: 32px;">
+
+          <!-- Left Element: INSIDE STARIZO Badge -->
+          <div class="flex items-center gap-3 shrink-0">
+            <div class="shrink-0" style="background-color: #FF8D00; width: 4px; height: 28px; border-radius: 9999px;">
+            </div>
+            <span class="font-montserrat font-bold uppercase tracking-[0.14em]"
+              style="color: #A46C20; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 16px; line-height: 28px; letter-spacing: 0.14em; text-transform: uppercase; white-space: nowrap;">INSIDE
+              STARIZO</span>
+          </div>
+
+          <!-- Right Element: Manufacturing Built For Scale + Subtitle -->
+          <div class="flex flex-col items-start text-left"
+            style="width: 393px; max-width: 393px; min-height: 102px; gap: 12px; opacity: 1;">
+            <h2 class="font-montserrat font-bold text-black text-left"
+              style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 22px; line-height: 30px; letter-spacing: 0;">
+              Manufacturing Built For Scale
+            </h2>
+            <p class="font-montserrat font-medium text-black/75 text-left"
+              style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 18px; line-height: 30px; letter-spacing: 0;">
+              Infrastructure designed to support quality, traceability, and long-term growth.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Facility Commissioning Row Container (Strict Horizontal Layout: Left Highlights & Right Image Block) -->
+      <div class="mt-10 mx-auto flex flex-row items-start justify-between py-6 px-2 sm:px-4"
+        style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; max-width: 1050px; width: 100%; min-height: 326px; opacity: 1; gap: 32px;">
+
+        <!-- Left Side: Header Image Line & 5 Bullet Highlights -->
+        <div class="flex flex-col items-start flex-1" style="max-width: 680px; width: 100%;">
+
+          <!-- Facility Commissioning Header Image Asset (Fits left column width) -->
+          <img src="./public/assets/Facility Communation.png" alt="Facility Commissioning"
+            class="w-full h-auto object-contain mb-6" style="width: 100%; max-width: 680px; opacity: 1;">
+
+          <!-- 5 Highlights Bullet List (Using about-bullate.svg) -->
+          <div class="flex flex-col gap-4">
+            <!-- Item 1: Location -->
+            <div class="flex items-center gap-3">
+              <img src="./public/assets/about-bullate.svg" alt="" class="w-[17px] h-[16px] shrink-0">
+              <span class="font-montserrat font-medium text-[18px] leading-[26px]"
+                style="color: #FF8D00;">Location</span>
+            </div>
+
+            <!-- Item 2: Production Capacity -->
+            <div class="flex items-center gap-3">
+              <img src="./public/assets/about-bullate.svg" alt="" class="w-[17px] h-[16px] shrink-0">
+              <span class="font-montserrat font-medium text-[18px] leading-[26px]" style="color: #FF8D00;">Production
+                Capacity</span>
+            </div>
+
+            <!-- Item 3: Integrated R&D -->
+            <div class="flex items-center gap-3">
+              <img src="./public/assets/about-bullate.svg" alt="" class="w-[17px] h-[16px] shrink-0">
+              <span class="font-montserrat font-medium text-[18px] leading-[26px]" style="color: #FF8D00;">Integrated
+                R&D</span>
+            </div>
+
+            <!-- Item 4: Energy -->
+            <div class="flex items-center gap-3">
+              <img src="./public/assets/about-bullate.svg" alt="" class="w-[17px] h-[16px] shrink-0">
+              <span class="font-montserrat font-medium text-[18px] leading-[26px]" style="color: #FF8D00;">Energy</span>
+            </div>
+
+            <!-- Item 5: Storage -->
+            <div class="flex items-center gap-3">
+              <img src="./public/assets/about-bullate.svg" alt="" class="w-[17px] h-[16px] shrink-0">
+              <span class="font-montserrat font-medium text-[18px] leading-[26px]"
+                style="color: #FF8D00;">Storage</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Side: Image & Title/Date (Permanently on the Right Side) -->
+        <div class="flex flex-col items-start shrink-0" style="width: 300px; min-width: 300px;">
+          <img src="./public/assets/facility-abaout.png" alt="Facility Commissioning"
+            class="w-[300px] h-auto object-contain mb-4">
+          <h4 class="font-montserrat font-bold text-black text-[22px] leading-[28px] mb-1"
+            style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 22px; line-height: 28px;">
+            Facility Commissioning
+          </h4>
+          <div class="font-montserrat font-bold text-[#00A256] text-[22px] leading-[28px]"
+            style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 22px; line-height: 28px; color: #00A256;">
+            Q2 2026
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 4: CERTIFICATIONS (EXACT FIGMA & TARGET IMAGE 1:1) ==================== -->
+    <section class="w-full bg-[#FDFBF3] py-16 md:py-24 border-b border-gray-100 flex justify-center">
+
+      <!-- Outer Container: Width 1011px, Padding 57px 49px 36px 42px, Radius 44px 44px 0 0, Background #FFFFFF -->
+      <div class="mx-auto bg-white shadow-sm flex flex-col items-center justify-center relative"
+        style="max-width: 1011px; width: 100%; min-height: 633px; border-top-left-radius: 44px; border-top-right-radius: 44px; border-bottom-left-radius: 44px; border-bottom-right-radius: 44px; padding-top: 57px; padding-right: 49px; padding-bottom: 36px; padding-left: 42px; gap: 10px; opacity: 1;">
+
+        <!-- Inner Container: Width 920px, Min-Height 540px, Radius 44px, Background #FEF3DC -->
+        <div
+          class="relative w-full rounded-[44px] bg-[#FEF3DC] p-6 sm:p-10 md:p-12 overflow-hidden flex flex-col justify-between"
+          style="max-width: 920px; width: 100%; min-height: 540px; border-radius: 44px; background-color: #FEF3DC; opacity: 1;">
+
+          <!-- Bottom-Left Decorative Watermark (Figma Node: Soft #FFDDB8 Peach Watermark behind z-10 cards) -->
+          <img src="./public/assets/footer-left-leaf.svg" alt=""
+            class="absolute bottom-0 left-0 w-[111px] sm:w-[260px] h-auto pointer-events-none select-none z-0 opacity-35">
+
+          <!-- Inner Content Layer (Centered inside #FEF3DC container) -->
+          <div class="relative z-10 w-full flex flex-col items-start justify-center gap-8 mx-auto"
+            style="max-width: 840px;">
+
+            <!-- Header Row: Orange Bar + CERTIFICATIONS Title -->
+            <div class="flex items-center gap-3" style="min-height: 54px; opacity: 1;">
+              <div class="shrink-0" style="background-color: #FF8D00; width: 4px; height: 28px; border-radius: 9999px;">
+              </div>
+              <span class="font-montserrat font-bold uppercase tracking-[0.14em]"
+                style="color: #5D3700; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 22px; line-height: 54px; letter-spacing: 0.14em; text-transform: uppercase;">CERTIFICATIONS</span>
+            </div>
+
+            <!-- 8 Certificates Grid (Strictly 4 columns, 2 rows, centered) -->
+            <div
+              class="w-full grid grid-cols-4 gap-x-4 sm:gap-x-8 gap-y-8 items-start justify-items-center justify-center mx-auto"
+              style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); justify-items: center; justify-content: center;">
+
+              <!-- 1. FSSC 22000 -->
+              <div class="flex flex-col items-center text-center justify-start"
+                style="width: 167px; max-width: 167px; min-height: 156.79px; gap: 1px; opacity: 1;">
+                <div
+                  class="bg-white border-[3.5px] border-black flex items-center justify-center p-2 shadow-sm shrink-0"
+                  style="width: 121.79px; height: 121.79px; border: 3.5px solid #000000; background-color: #FFFFFF;">
+                  <img src="./public/assets/FSSC.png" alt="FSSC 22000" class="w-full h-full object-contain">
+                </div>
+                <span class="font-montserrat font-medium text-[14px] text-black text-center leading-[20px]"
+                  style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 14px; line-height: 20px; letter-spacing: 0; text-align: center;">
+                  FSSC 22000
+                </span>
+              </div>
+
+              <!-- 2. ISO 9001:2015 -->
+              <div class="flex flex-col items-center text-center justify-start"
+                style="width: 167px; max-width: 167px; min-height: 156.79px; gap: 1px; opacity: 1;">
+                <div
+                  class="bg-white border-[3.5px] border-black flex items-center justify-center p-2 shadow-sm shrink-0"
+                  style="width: 121.79px; height: 121.79px; border: 3.5px solid #000000; background-color: #FFFFFF;">
+                  <img src="./public/assets/ISO.png" alt="ISO 9001:2015" class="w-full h-full object-contain">
+                </div>
+                <span class="font-montserrat font-medium text-[14px] text-black text-center leading-[20px]"
+                  style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 14px; line-height: 20px; letter-spacing: 0; text-align: center;">
+                  ISO 9001:2015
+                </span>
+              </div>
+
+              <!-- 3. Non-GMO Project-verified -->
+              <div class="flex flex-col items-center text-center justify-start"
+                style="width: 167px; max-width: 167px; min-height: 156.79px; gap: 1px; opacity: 1;">
+                <div
+                  class="bg-white border-[3.5px] border-black flex items-center justify-center p-2 shadow-sm shrink-0"
+                  style="width: 121.79px; height: 121.79px; border: 3.5px solid #000000; background-color: #FFFFFF;">
+                  <img src="./public/assets/NonGMO.png" alt="Non-GMO Project-verified"
+                    class="w-full h-full object-contain">
+                </div>
+                <span class="font-montserrat font-medium text-[14px] text-black text-center leading-[20px]"
+                  style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 14px; line-height: 20px; letter-spacing: 0; text-align: center;">
+                  Non-GMO Project-verified
+                </span>
+              </div>
+
+              <!-- 4. Halal Indonesia -->
+              <div class="flex flex-col items-center text-center justify-start"
+                style="width: 167px; max-width: 167px; min-height: 156.79px; gap: 1px; opacity: 1;">
+                <div
+                  class="bg-white border-[3.5px] border-black flex items-center justify-center p-2 shadow-sm shrink-0"
+                  style="width: 121.79px; height: 121.79px; border: 3.5px solid #000000; background-color: #FFFFFF;">
+                  <img src="./public/assets/Halal.png" alt="Halal Indonesia" class="w-full h-full object-contain">
+                </div>
+                <span class="font-montserrat font-medium text-[14px] text-black text-center leading-[20px]"
+                  style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 14px; line-height: 20px; letter-spacing: 0; text-align: center;">
+                  Halal Indonesia
+                </span>
+              </div>
+
+              <!-- 5. Kosher -->
+              <div class="flex flex-col items-center text-center justify-start"
+                style="width: 167px; max-width: 167px; min-height: 156.79px; gap: 1px; opacity: 1;">
+                <div
+                  class="bg-white border-[3.5px] border-black flex items-center justify-center p-2 shadow-sm shrink-0"
+                  style="width: 121.79px; height: 121.79px; border: 3.5px solid #000000; background-color: #FFFFFF;">
+                  <img src="./public/assets/K-2.png" alt="Kosher" class="w-full h-full object-contain">
+                </div>
+                <span class="font-montserrat font-medium text-[14px] text-black text-center leading-[20px]"
+                  style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 14px; line-height: 20px; letter-spacing: 0; text-align: center;">
+                  Kosher
+                </span>
+              </div>
+
+              <!-- 6. BRCGS (British Retail Consortium Global Standards) -->
+              <div class="flex flex-col items-center text-center justify-start"
+                style="width: 167px; max-width: 167px; min-height: 156.79px; gap: 1px; opacity: 1;">
+                <div
+                  class="bg-white border-[3.5px] border-black flex items-center justify-center p-2 shadow-sm shrink-0"
+                  style="width: 121.79px; height: 121.79px; border: 3.5px solid #000000; background-color: #FFFFFF;">
+                  <img src="./public/assets/BRGS.png" alt="BRCGS" class="w-full h-full object-contain">
+                </div>
+                <span class="font-montserrat font-medium text-[14px] text-black text-center leading-[20px]"
+                  style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 14px; line-height: 20px; letter-spacing: 0; text-align: center;">
+                  BRCGS (British Retail Consortium Global Standards)
+                </span>
+              </div>
+
+              <!-- 7. FDA (Food and Drug Administration USA) -->
+              <div class="flex flex-col items-center text-center justify-start"
+                style="width: 167px; max-width: 167px; min-height: 156.79px; gap: 1px; opacity: 1;">
+                <div
+                  class="bg-white border-[3.5px] border-black flex items-center justify-center p-2 shadow-sm shrink-0"
+                  style="width: 121.79px; height: 121.79px; border: 3.5px solid #000000; background-color: #FFFFFF;">
+                  <img src="./public/assets/FDA.png" alt="FDA" class="w-full h-full object-contain">
+                </div>
+                <span class="font-montserrat font-medium text-[14px] text-black text-center leading-[20px]"
+                  style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 14px; line-height: 20px; letter-spacing: 0; text-align: center;">
+                  FDA (Food and Drug Administration USA)
+                </span>
+              </div>
+
+              <!-- 8. GMP (Good Manufacturing Processes) -->
+              <div class="flex flex-col items-center text-center justify-start"
+                style="width: 167px; max-width: 167px; min-height: 156.79px; gap: 1px; opacity: 1;">
+                <div
+                  class="bg-white border-[3.5px] border-black flex items-center justify-center p-2 shadow-sm shrink-0"
+                  style="width: 121.79px; height: 121.79px; border: 3.5px solid #000000; background-color: #FFFFFF;">
+                  <img src="./public/assets/GMP.png" alt="GMP" class="w-full h-full object-contain">
+                </div>
+                <span class="font-montserrat font-medium text-[14px] text-black text-center leading-[20px]"
+                  style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 14px; line-height: 20px; letter-spacing: 0; text-align: center;">
+                  GMP (Good Manufacturing Processes)
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 5: CALL TO ACTION BANNER (FIGMA SPEC 1:1) ==================== -->
+    <section class="w-full bg-[#FDFBF3] py-12 md:py-16 border-b border-gray-100">
+      <div
+        class="w-full max-w-[1280px] mx-auto min-h-[242px] px-4 sm:px-6 md:px-8 flex flex-row flex-wrap md:flex-nowrap items-center justify-between gap-6 lg:gap-12">
+
+        <!-- Left Container (Width: 599px, Height: 227px, Gap: 19px) -->
+        <div class="flex flex-col justify-between items-start text-left flex-1 min-w-[300px]"
+          style="max-width: 599px; min-height: 227px; gap: 19px; opacity: 1;">
+
+          <!-- Heading (Montserrat 900 Black, 32px size, 36px line-height, #5D3700 color) -->
+          <h2 class="font-montserrat font-black text-[#5D3700]"
+            style="font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 32px; line-height: 36px; letter-spacing: 0; color: #5D3700;">
+            Let’s Build The Next Generation Of Ingredient Solutions
+          </h2>
+
+          <!-- Subtitle Paragraph (Montserrat 400 Regular, 18px size, 24px line-height) -->
+          <p class="font-montserrat font-normal text-black"
+            style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 18px; line-height: 24px; letter-spacing: 0; color: #000000;">
+            Whether you're developing a new formulation or scaling production, our team is ready to support your next
+            stage of growth.
+          </p>
+
+          <!-- Button (Width: 158px, Height: 45px, Radius: 22px, Background: #FF8D00, Padding: 6px 19px, Montserrat 600 SemiBold 18px text) -->
+          <a href="./careers.html#contact"
+            class="font-montserrat font-semibold text-white flex items-center justify-center transition duration-200 select-none shrink-0 hover:bg-[#e07c00] shadow-sm"
+            style="width: 158px; height: 45px; border-radius: 22px; background-color: #FF8D00; padding: 6px 19px; gap: 2px; opacity: 1; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 18px; line-height: 21px; letter-spacing: 0; color: #FFFFFF;">
+            <span style="width: 102px; height: 21px; display: inline-flex; items-center: center;">Contact Us</span>
+            <svg class="w-4 h-4 stroke-current fill-none stroke-[2.5] shrink-0" viewBox="0 0 24 24">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+
+        </div>
+
+        <!-- Right Container (Width: 485px, Height: 242px, Top-Left & Bottom-Right Radius: 44px) -->
+        <div class="relative flex-1 min-w-[280px] shrink-0 overflow-visible" style="max-width: 485px; height: 242px;">
+
+          <!-- Photo Frame with Top-Left (44px) & Bottom-Right (44px) Corner Radii -->
+          <div class="w-full h-full overflow-hidden relative z-10"
+            style="border-top-left-radius: 44px; border-bottom-right-radius: 44px;">
+            <img src="./public/assets/about-let.png" alt="Starizo Ingredient Solutions"
+              class="w-full h-full object-cover">
+          </div>
+
+          <!-- Rice Plant Graphic Overlay (rice-g.png 118x166px on Bottom-Right) -->
+          <img src="./public/assets/rice-g.png" alt=""
+            class="absolute right-0 bottom-0 pointer-events-none select-none z-20 object-contain"
+            style="width: 118px; height: 166px;">
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==================== SHARED FOOTER (Copied from careers.html) ==================== -->
+  <footer class="w-full relative overflow-hidden">
+
+    <!-- Upper Footer Area -->
+    <div class="relative w-full bg-[#FDF7E9] border-t border-[#DF890C]">
+
+      <!-- Layer 2 — Left decorative leaf (Figma: left:-56px, top:14px, 111×145) -->
+      <div class="hidden lg:block absolute left-0 top-[14px] w-[111px] h-[145px] -translate-x-1/2 pointer-events-none">
+        <img src="./public/assets/footer-left-leaf.svg" alt="" class="w-full h-full">
+      </div>
+
+      <!-- Layer 1 — Right decorative leaf (Figma: right edge, top:14px, 111×145) -->
+      <div class="hidden lg:block absolute right-0 top-[14px] w-[111px] h-[145px] translate-x-1/2 pointer-events-none">
+        <img src="./public/assets/footer-right-leaf.svg" alt="" class="w-full h-full">
+      </div>
+
+      <!-- Footer Content Grid (centered 1280px) -->
+      <div class="max-w-[1280px] mx-auto px-6 md:px-[80px] py-12 lg:py-[54px]">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-y-8 gap-x-6 lg:gap-x-12">
+
+          <!-- Brand Logo Column -->
+          <div class="lg:col-span-2">
+            <img src="./public/assets/logo.svg" alt="Starizo" class="h-[44px] w-auto">
+          </div>
+
+          <!-- Products Column -->
+          <div class="lg:col-span-2">
+            <h5 class="text-[12px] font-bold text-black leading-[20px] mb-4">Products</h5>
+            <ul class="space-y-2">
+              <li><a href="./index.html#products"
+                  class="text-[12px] text-black leading-[20px] hover:text-starizo-orange transition-colors">Food &
+                  Beverage</a></li>
+              <li><a href="./index.html#products"
+                  class="text-[12px] text-black leading-[16px] hover:text-starizo-orange transition-colors">Cosmetics
+                  & Personal Care</a></li>
+            </ul>
+          </div>
+
+          <!-- About Column -->
+          <div class="lg:col-span-2">
+            <h5 class="text-[12px] font-bold text-black leading-[20px] mb-4">About</h5>
+            <ul class="space-y-2">
+              <li><a href="./about.html"
+                  class="text-[12px] text-black leading-[20px] hover:text-starizo-orange transition-colors">Our
+                  Story</a></li>
+              <li><a href="./index.html#research"
+                  class="text-[12px] text-black leading-[20px] hover:text-starizo-orange transition-colors">Research
+                  Lab</a></li>
+              <li><a href="./about.html"
+                  class="text-[12px] text-black leading-[20px] hover:text-starizo-orange transition-colors">Technology
+                  & Quality</a></li>
+            </ul>
+          </div>
+
+          <!-- Partner with Us Column -->
+          <div class="lg:col-span-2">
+            <h5 class="text-[12px] font-bold text-black leading-[20px] mb-4">Partner with Us</h5>
+            <ul class="space-y-2">
+              <li><a href="./index.html#partner"
+                  class="text-[12px] font-bold text-black leading-[20px] hover:text-starizo-orange transition-colors">Plant</a>
+              </li>
+              <li><a href="./careers.html"
+                  class="text-[12px] font-bold text-black leading-[20px] hover:text-starizo-orange transition-colors">Careers</a>
+              </li>
+              <li><a href="./index.html#insights"
+                  class="text-[12px] font-bold text-black leading-[20px] hover:text-starizo-orange transition-colors">Insights</a>
+              </li>
+              <li><a href="./careers.html#contact"
+                  class="text-[12px] font-bold text-black leading-[20px] hover:text-starizo-orange transition-colors">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Details Column -->
+          <div class="lg:col-span-4 whitespace-nowrap">
+            <h5 class="text-[12px] font-bold text-black leading-[20px] mb-4">Contact Details</h5>
+            <div class="flex items-center gap-2">
+              <img src="./public/assets/mail-icon.svg" alt="Email" class="w-[29px] h-[29px] shrink-0">
+              <span class="text-[12px] font-bold text-black leading-[20px]">Email: sales@starizo.com</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright Bar (Figma: bg #5D3700, height 33px) -->
+    <div class="w-full bg-[#5D3700] text-white font-montserrat font-normal text-[10px] leading-[20px] tracking-[0em]">
+      <div
+        class="max-w-[1280px] mx-auto px-6 md:px-[80px] min-h-[33px] py-2 md:py-0 md:h-[33px] flex flex-row items-center justify-between gap-2 whitespace-nowrap">
+        <span>© 2026 Starizo | All Rights Reserved.</span>
+        <div class="flex items-center gap-1 shrink-0">
+          <a href="#" class="hover:underline transition-colors">Legal policy</a>
+          <span class="opacity-50">|</span>
+          <a href="#" class="hover:underline transition-colors">Privacy policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div> <!-- Closes Desktop View Wrapper -->
+
+  <!-- ========================================== -->
+  <!-- ========== MOBILE LAYOUT VIEW =========== -->
+  <!-- ========================================== -->
+  <div class="xl:hidden w-full bg-[#FDFBF3] overflow-x-hidden">
+
+    <!-- Header / Navigation Bar (Copied 1:1 from Careers Page) -->
+    <header class="w-full h-[100px] bg-white flex items-center px-6 md:px-10 justify-between relative z-30 shadow-sm">
+      <a href="./index.html" class="flex items-center focus:outline-none" aria-label="Starizo Home">
+        <img src="./public/assets/logo.svg" alt="starizo™" class="h-9 w-auto">
+      </a>
+
+      <div class="flex items-center gap-3">
+        <!-- Contact Us -->
+        <a href="./careers.html#contact"
+          class="bg-[#FF8D00] hover:bg-starizo-orange-dark text-white font-semibold text-[12px] h-9 px-[18px] rounded-[18px] transition-all duration-300 flex items-center gap-1.5 group select-none">
+          Contact Us
+          <svg
+            class="w-3 h-3 fill-none stroke-current stroke-[2.5] transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Hamburger -->
+        <button id="mobile-menu-btn-about"
+          class="flex items-center justify-center text-[#5D3700] hover:text-starizo-orange w-8 h-8 transition focus:outline-none"
+          aria-label="Toggle Navigation Menu">
+          <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-dropdown-about"
+        class="hidden absolute top-[100px] left-0 right-0 bg-white border-b border-gray-100 shadow-[0px_10px_30px_rgba(0,0,0,0.08)] p-6 z-50 flex flex-col gap-4 font-montserrat">
+        <a href="./index.html" class="text-[16px] text-starizo-brown hover:text-starizo-orange py-2 border-b border-gray-50 transition duration-200">Home</a>
+        <a href="./index.html#products" class="text-[16px] text-starizo-brown hover:text-starizo-orange py-2 border-b border-gray-50 transition duration-200">Products</a>
+        <a href="./about.html" class="text-[16px] font-semibold text-starizo-orange py-2 border-b border-gray-50">About</a>
+        <a href="./index.html#partner" class="text-[16px] text-starizo-brown hover:text-starizo-orange py-2 border-b border-gray-50 transition duration-200">Partner with Us</a>
+        <a href="./index.html#research" class="text-[16px] text-starizo-brown hover:text-starizo-orange py-2 border-b border-gray-50 transition duration-200">Research Lab</a>
+        <a href="./careers.html" class="text-[16px] text-starizo-brown hover:text-starizo-orange py-2 border-b border-gray-50 transition duration-200">Careers</a>
+        <a href="./index.html#insights" class="text-[16px] text-starizo-brown hover:text-starizo-orange py-2 transition duration-200">Insights</a>
+      </div>
+    </header>
+
+    <!-- Mobile Hero Content Wrapper (Figma Exact Spec: width 570px, min-height 600px, background gradient) -->
+    <section class="relative w-full min-h-[600px] text-white px-6 pt-6 pb-12 overflow-hidden"
+      style="background: linear-gradient(154.9deg, rgba(0, 147, 3, 0.6) 44.05%, rgba(57, 137, 79, 0.6) 84.05%), #00A256;">
+      
+      <!-- Background Rice Field Texture Overlay -->
+      <img src="./public/assets/hero-rice-field-bg.png" alt="" class="absolute inset-0 w-full h-full object-cover opacity-35 pointer-events-none select-none mix-blend-overlay z-0">
+      <!-- Golden Looper Wave Overlay -->
+      <img src="./public/assets/Looper-1.png" alt="" class="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none select-none z-1">
+
+      <!-- Inner Container (Figma: width 342px, height 470px, gap 42px) -->
+      <div class="relative z-10 max-w-[342px] mx-auto flex flex-col justify-between" style="gap: 42px;">
+        
+        <!-- Top Group: About Us Badge + Title + Leaf Frame (Figma: width 342px, height 210px, gap 8px) -->
+        <div class="flex flex-col items-start w-full" style="gap: 8px;">
+          
+          <!-- Badge Header (Figma: width 75px, height 22px) -->
+          <span class="font-montserrat font-bold text-[#FDF7E9] uppercase text-[14px] tracking-[0.14em]" style="height: 22px;">About Us</span>
+
+          <!-- Title & Leaf Frame Row (Fixed layout preventing vertical flex stretch) -->
+          <div class="relative w-full flex flex-row items-start justify-between gap-3">
+            <!-- Headline Text (Figma: font-size 32px, font-weight 900 Black, line-height 42px) -->
+            <h1 class="font-montserrat font-black text-white flex-1"
+              style="font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 28px; sm:font-size: 32px; line-height: 38px; sm:line-height: 44px; letter-spacing: 0%;">
+              Transforming Rice Into Global Ingredient Innovation
+            </h1>
+
+            <!-- Convex Leaf Photo Frame + Sprout Watermark (Fixed 125px x 140px) -->
+            <div class="relative shrink-0 w-[125px] h-[140px] self-start mt-1">
+              <div class="w-[125px] h-[140px] hero-leaf-frame-mobile overflow-hidden border-3 border-[#006633] shadow-xl relative z-10">
+                <img src="./public/assets/hero-farmer-leaf-photo.png" alt="Starizo Rice Field Farmer"
+                  class="w-full h-full object-cover">
+              </div>
+
+              <!-- Translucent 4-Leaf Sprout Watermark Overlay -->
+              <img src="./public/assets/about-leaf.png" alt=""
+                class="absolute -bottom-2 -left-4 w-[55px] h-auto opacity-40 pointer-events-none select-none z-20">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Subtitle Container (Figma: font-size 16px, font-weight 500 Medium, line-height 30px) -->
+        <p class="font-montserrat font-medium text-white/95 text-left"
+          style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 16px; line-height: 30px; letter-spacing: 0%;">
+          Built on decades of rice processing expertise, STARIZO develops clean-label, rice-derived ingredients designed for modern industries and global manufacturing.
+        </p>
+
+        <!-- Action Buttons Group (Figma Spec 1:1: Container width 322px, height 36px, gap 19px) -->
+        <div class="flex flex-row items-center justify-start max-w-full"
+          style="width: 322px; height: 36px; gap: 19px;">
+          
+          <!-- Explore Products (Figma Spec 1:1: width 174px, height 36px, border-radius 22px, border 1px #FFFFFF, backdrop-filter blur(4px)) -->
+          <a href="./index.html#products"
+            class="font-montserrat font-semibold text-white flex items-center justify-center transition duration-200 select-none shrink-0"
+            style="width: 174px; height: 36px; border-radius: 22px; border: 1px solid #FFFFFF; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); gap: 10px; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 14px; line-height: 21px; letter-spacing: 0%;">
+            <span class="whitespace-nowrap flex items-center justify-center gap-2" style="width: 124px; height: 21px;">
+              Explore Products
+              <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5] shrink-0" viewBox="0 0 24 24">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </span>
+          </a>
+
+          <!-- Contact Us (Figma Spec 1:1: width 129px, height 36px, border-radius 22px, background #FF8D00) -->
+          <a href="./careers.html#contact"
+            class="font-montserrat font-semibold text-white flex items-center justify-center transition duration-200 shadow-md select-none shrink-0"
+            style="width: 129px; height: 36px; border-radius: 22px; background-color: #FF8D00; gap: 10px; font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 14px; line-height: 21px; letter-spacing: 0%;">
+            <span class="whitespace-nowrap flex items-center justify-center gap-2" style="width: 79px; height: 21px;">
+              Contact Us
+              <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5] shrink-0" viewBox="0 0 24 24">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Mobile Our Story Section (Compact Padding, No Dead Space) -->
+    <section class="w-full bg-white px-6 py-8 border-b border-gray-100">
+      <div class="max-w-[342px] mx-auto flex flex-col items-start" style="gap: 12px;">
+        
+        <!-- Badge Container (Orange bar left + Single-line OUR STORY) -->
+        <div class="flex flex-row items-center shrink-0 whitespace-nowrap" style="height: 54px; gap: 12px;">
+          <div class="shrink-0" style="background-color: #FF8D00; width: 4px; height: 28px; border-radius: 9999px;"></div>
+          <span class="font-montserrat font-normal uppercase whitespace-nowrap"
+            style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 20px; sm:font-size: 22px; line-height: 54px; letter-spacing: 0.11em; color: #5D3700;">OUR STORY</span>
+        </div>
+
+        <!-- Headline (Figma: font-size 18px, font-weight 700 Bold, line-height 30px) -->
+        <h2 class="font-montserrat font-bold text-black text-left"
+          style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 18px; line-height: 30px; letter-spacing: 0%;">
+          What began as expertise in rice processing evolved into a next-generation ingredient platform.
+        </h2>
+
+        <!-- Body Content Paragraph 1 (Figma: font-size 16px, font-weight 500 Medium, line-height 30px) -->
+        <p class="font-montserrat font-medium text-black/80 text-left"
+          style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 16px; line-height: 30px; letter-spacing: 0%;">
+          For more than three decades, the foundation behind STARIZO has refined how rice is sourced, processed, and transformed. Today, STARIZO extends that legacy into specialized clean-label ingredients developed for food, nutrition, pharma, and industrial innovators worldwide.
+        </p>
+
+        <!-- Body Content Paragraph 2 (Figma: font-size 16px, font-weight 500 Medium, line-height 30px) -->
+        <p class="font-montserrat font-medium text-black/80 text-left"
+          style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 16px; line-height: 30px; letter-spacing: 0%;">
+          This evolution is not simply manufacturing expansion—it represents a shift toward creating smarter ingredient ecosystems that deliver consistency, transparency, and performance.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Mobile Inside Starizo & Manufacturing Section -->
+    <section class="w-full bg-white px-6 py-8 border-b border-gray-100">
+      
+      <!-- Header Container (Figma Spec: max-width 342px, gap 16px) -->
+      <div class="max-w-[342px] mx-auto flex flex-col items-start mb-5" style="gap: 16px;">
+        
+        <!-- Badge Container (Figma: height 54px, gap 12px, font-size 16px Regular, 11% tracking) -->
+        <div class="flex flex-row items-center shrink-0 whitespace-nowrap" style="height: 54px; gap: 12px;">
+          <div class="shrink-0" style="background-color: #FF8D00; width: 4px; height: 28px; border-radius: 9999px;"></div>
+          <span class="font-montserrat font-normal uppercase whitespace-nowrap"
+            style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 16px; line-height: 54px; letter-spacing: 0.11em; color: #5D3700;">INSIDE STARIZO</span>
+        </div>
+
+        <!-- Headline (Figma: font-size 18px, font-weight 700 Bold, line-height 30px) -->
+        <h2 class="font-montserrat font-bold text-black text-left"
+          style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 18px; line-height: 30px; letter-spacing: 0%;">
+          Manufacturing Built For Scale
+        </h2>
+
+        <!-- Subtitle (Figma: font-size 16px, font-weight 500 Medium, line-height 30px) -->
+        <p class="font-montserrat font-medium text-black/75 text-left"
+          style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 16px; line-height: 30px; letter-spacing: 0%;">
+          Infrastructure designed to support quality, traceability, and long-term growth.
+        </p>
+
+      </div>
+
+      <!-- Mobile Facility Commissioning Block (Figma Spec 1:1 Vertical Flow) -->
+      <div class="max-w-[342px] mx-auto flex flex-col items-start w-full" style="gap: 16px;">
+        
+        <!-- First Title Container (Figma: width 220px, height 71px, padding-top/bottom 24px, font-size 18px Bold) -->
+        <div class="flex flex-col items-start justify-center w-full shrink-0"
+          style="max-width: 220px; min-height: 71px; padding-top: 24px; padding-bottom: 24px; gap: 10px;">
+          <h3 class="font-montserrat font-bold text-black text-left"
+            style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 18px; line-height: 23px; letter-spacing: 0%;">
+            Facility Commissioning
+          </h3>
+        </div>
+
+        <!-- Image & Title/Date Row Container (Figma: width 342px, height 255.33px, gap 12.94px) -->
+        <div class="flex flex-col items-start w-full shrink-0" style="max-width: 342px; gap: 12.94px;">
+          
+          <!-- Image Asset (Figma: width 342px, height 198.4px, border-top-left 47.44px, border-bottom-right 47.44px, same as desktop) -->
+          <div class="w-full overflow-hidden shadow-md shrink-0"
+            style="max-width: 342px; height: 198.4px; border-top-left-radius: 47.44px; border-bottom-right-radius: 47.44px;">
+            <img src="./public/assets/facility-abaout.png" alt="Facility Commissioning"
+              class="w-full h-full object-cover" style="border-top-left-radius: 47.44px; border-bottom-right-radius: 47.44px;">
+          </div>
+
+          <!-- Horizontal Titles Row (Left: Facility Commissioning 16px Bold, Right: Q2 2026 16px Medium Green) -->
+          <div class="flex flex-row items-center justify-between w-full shrink-0" style="max-width: 342px;">
+            <span class="font-montserrat font-bold text-black text-left"
+              style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 16px; line-height: 33.07px; letter-spacing: 0%;">
+              Facility Commissioning
+            </span>
+            <span class="font-montserrat font-medium text-[#00A256] text-right"
+              style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 16px; line-height: 43.13px; letter-spacing: 0%; color: #00A256;">
+              Q2 2026
+            </span>
+          </div>
+
+        </div>
+
+        <!-- Highlights List Container (Figma: width 209px, height 247px, gap 33px, icons same as desktop) -->
+        <div class="flex flex-col items-start w-full mt-4" style="max-width: 209px; min-height: 247px; gap: 33px;">
+          
+          <!-- Highlight Item 1: Location -->
+          <div class="flex items-center gap-3">
+            <img src="./public/assets/about-bullate.svg" alt="" class="w-[17px] h-[16px] shrink-0">
+            <span class="font-montserrat font-normal text-[#FF8D00]"
+              style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 18px; line-height: 23px; letter-spacing: 0%; color: #FF8D00;">Location</span>
+          </div>
+
+          <!-- Highlight Item 2: Production Capacity -->
+          <div class="flex items-center gap-3">
+            <img src="./public/assets/about-bullate.svg" alt="" class="w-[17px] h-[16px] shrink-0">
+            <span class="font-montserrat font-normal text-[#FF8D00]"
+              style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 18px; line-height: 23px; letter-spacing: 0%; color: #FF8D00;">Production Capacity</span>
+          </div>
+
+          <!-- Highlight Item 3: Integrated R&D -->
+          <div class="flex items-center gap-3">
+            <img src="./public/assets/about-bullate.svg" alt="" class="w-[17px] h-[16px] shrink-0">
+            <span class="font-montserrat font-normal text-[#FF8D00]"
+              style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 18px; line-height: 23px; letter-spacing: 0%; color: #FF8D00;">Integrated R&D</span>
+          </div>
+
+          <!-- Highlight Item 4: Energy -->
+          <div class="flex items-center gap-3">
+            <img src="./public/assets/about-bullate.svg" alt="" class="w-[17px] h-[16px] shrink-0">
+            <span class="font-montserrat font-normal text-[#FF8D00]"
+              style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 18px; line-height: 23px; letter-spacing: 0%; color: #FF8D00;">Energy</span>
+          </div>
+
+          <!-- Highlight Item 5: Storage -->
+          <div class="flex items-center gap-3">
+            <img src="./public/assets/about-bullate.svg" alt="" class="w-[17px] h-[16px] shrink-0">
+            <span class="font-montserrat font-normal text-[#FF8D00]"
+              style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 18px; line-height: 23px; letter-spacing: 0%; color: #FF8D00;">Storage</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Mobile Certifications Section (Clean 1:1 Figma Match: #FEF3DC Card + Direct PNG Logo Cards) -->
+    <section class="w-full bg-[#FDFBF3] py-8 border-b border-gray-100 flex justify-center px-4">
+      
+      <!-- Inner Container (Figma: width 342px, radius 44px, background #FEF3DC) -->
+      <div class="relative w-full max-w-[342px] rounded-[44px] bg-[#FEF3DC] px-5 py-8 overflow-hidden shadow-sm flex flex-col items-center gap-6 mx-auto"
+        style="background-color: #FEF3DC; border-radius: 44px;">
+        
+
+
+        <!-- Header Badge Row (Figma: width 176px, height 33px, gap 12px, 16px Regular, 11% tracking) -->
+        <div class="relative z-10 flex flex-row items-center justify-start shrink-0 whitespace-nowrap self-start"
+          style="width: 176px; height: 33px; gap: 12px;">
+          <div class="shrink-0" style="background-color: #FF8D00; width: 4px; height: 28px; border-radius: 9999px;"></div>
+          <span class="font-montserrat font-normal uppercase whitespace-nowrap"
+            style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 16px; line-height: 54px; letter-spacing: 0.11em; color: #5D3700;">CERTIFICATIONS</span>
+        </div>
+
+        <!-- 8 Certificates Grid (Core Bug Fixed: w-fit mx-auto for 100% Symmetric Perfect Centering) -->
+        <div class="relative z-10 w-fit mx-auto grid grid-cols-2 gap-x-4 sm:gap-x-6 gap-y-6 justify-center place-items-center items-start">
+          
+          <!-- 1. FSSC 22000 -->
+          <div class="flex flex-col items-center text-center justify-start" style="width: 121.79px; min-height: 157.79px;">
+            <div class="shrink-0 overflow-hidden" style="width: 121.79px; height: 121.79px;">
+              <img src="./public/assets/FSSC.png" alt="FSSC 22000" class="w-full h-full object-contain">
+            </div>
+            <span class="font-montserrat font-medium text-[13px] text-black text-center leading-[18px] mt-1.5" style="width: 121.79px; min-height: 36px;">
+              FSSC 22000
+            </span>
+          </div>
+
+          <!-- 2. ISO 9001:2015 -->
+          <div class="flex flex-col items-center text-center justify-start" style="width: 121.79px; min-height: 157.79px;">
+            <div class="shrink-0 overflow-hidden" style="width: 121.79px; height: 121.79px;">
+              <img src="./public/assets/ISO.png" alt="ISO 9001:2015" class="w-full h-full object-contain">
+            </div>
+            <span class="font-montserrat font-medium text-[13px] text-black text-center leading-[18px] mt-1.5" style="width: 121.79px; min-height: 36px;">
+              ISO 9001:2015
+            </span>
+          </div>
+
+          <!-- 3. Non-GMO Project-verified -->
+          <div class="flex flex-col items-center text-center justify-start" style="width: 121.79px; min-height: 157.79px;">
+            <div class="shrink-0 overflow-hidden" style="width: 121.79px; height: 121.79px;">
+              <img src="./public/assets/NonGMO.png" alt="Non-GMO Project-verified" class="w-full h-full object-contain">
+            </div>
+            <span class="font-montserrat font-medium text-[13px] text-black text-center leading-[18px] mt-1.5" style="width: 121.79px; min-height: 36px;">
+              Non-GMO Project-verified
+            </span>
+          </div>
+
+          <!-- 4. Halal Indonesia -->
+          <div class="flex flex-col items-center text-center justify-start" style="width: 121.79px; min-height: 157.79px;">
+            <div class="shrink-0 overflow-hidden" style="width: 121.79px; height: 121.79px;">
+              <img src="./public/assets/Halal.png" alt="Halal Indonesia" class="w-full h-full object-contain">
+            </div>
+            <span class="font-montserrat font-medium text-[13px] text-black text-center leading-[18px] mt-1.5" style="width: 121.79px; min-height: 36px;">
+              Halal Indonesia
+            </span>
+          </div>
+
+          <!-- 5. Kosher -->
+          <div class="flex flex-col items-center text-center justify-start" style="width: 121.79px; min-height: 157.79px;">
+            <div class="shrink-0 overflow-hidden" style="width: 121.79px; height: 121.79px;">
+              <img src="./public/assets/K-2.png" alt="Kosher" class="w-full h-full object-contain">
+            </div>
+            <span class="font-montserrat font-medium text-[13px] text-black text-center leading-[18px] mt-1.5" style="width: 121.79px; min-height: 36px;">
+              Kosher
+            </span>
+          </div>
+
+          <!-- 6. BRCGS -->
+          <div class="flex flex-col items-center text-center justify-start" style="width: 121.79px; min-height: 157.79px;">
+            <div class="shrink-0 overflow-hidden" style="width: 121.79px; height: 121.79px;">
+              <img src="./public/assets/BRGS.png" alt="BRCGS" class="w-full h-full object-contain">
+            </div>
+            <span class="font-montserrat font-medium text-[13px] text-black text-center leading-[18px] mt-1.5" style="width: 121.79px; min-height: 36px;">
+              BRCGS (British Retail Consortium Global Standards)
+            </span>
+          </div>
+
+          <!-- 7. FDA -->
+          <div class="flex flex-col items-center text-center justify-start" style="width: 121.79px; min-height: 157.79px;">
+            <div class="shrink-0 overflow-hidden" style="width: 121.79px; height: 121.79px;">
+              <img src="./public/assets/FDA.png" alt="FDA" class="w-full h-full object-contain">
+            </div>
+            <span class="font-montserrat font-medium text-[13px] text-black text-center leading-[18px] mt-1.5" style="width: 121.79px; min-height: 36px;">
+              FDA (Food and Drug Administration USA)
+            </span>
+          </div>
+
+          <!-- 8. GMP -->
+          <div class="flex flex-col items-center text-center justify-start" style="width: 121.79px; min-height: 157.79px;">
+            <div class="shrink-0 overflow-hidden" style="width: 121.79px; height: 121.79px;">
+              <img src="./public/assets/GMP.png" alt="GMP" class="w-full h-full object-contain">
+            </div>
+            <span class="font-montserrat font-medium text-[13px] text-black text-center leading-[18px] mt-1.5" style="width: 121.79px; min-height: 36px;">
+              GMP (Good Manufacturing Processes)
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Mobile Partnership CTA Section (Figma Exact Spec 1:1, Straight Paddy & Centered Container) -->
+    <section class="w-full bg-white px-6 py-12 border-b border-gray-100 flex justify-center items-center">
+      
+      <!-- Main Container (Centered in Viewport, width 344.94px, min-height 488.37px) -->
+      <div class="w-full max-w-[344.94px] mx-auto flex flex-col items-center justify-center" style="gap: 33px;">
+        
+        <!-- Inner First Context Container (Width 342px, Left-aligned text for first 2 elements) -->
+        <div class="flex flex-col items-start justify-start w-full" style="max-width: 342px; gap: 20px;">
+          
+          <!-- 1. Headline Title (Starts from Left Side, 32px Montserrat Black, line-height 36px) -->
+          <h2 class="font-montserrat font-black text-[#3D2100] text-left"
+            style="font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 32px; line-height: 36px; letter-spacing: 0%;">
+            If Your Formulation Demands Partnership, Not Just Procurement
+          </h2>
+
+          <!-- 2. Subtitle Description (Starts from Left Side, 16px Montserrat Regular, line-height 24px) -->
+          <p class="font-montserrat font-normal text-black/80 text-left"
+            style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 16px; line-height: 24px; letter-spacing: 0%;">
+            Bring your challenge. We’ll bring ingredient expertise, manufacturing capability, and a long-term approach.
+          </p>
+
+          <!-- Buttons Container Row (Figma: width 342px, height 36px, gap 12px) -->
+          <div class="flex flex-row items-center justify-start w-full shrink-0 mt-2" style="max-width: 342px; height: 36px; gap: 12px;">
+            
+            <!-- Button 1: Become a Partner (Figma: width 181px, height 36px, radius 22px, padding 12px, bg #FF8D00) -->
+            <a href="./careers.html#contact"
+              class="flex flex-row items-center justify-center shrink-0 whitespace-nowrap shadow-sm hover:opacity-90 transition select-none"
+              style="width: 181px; height: 36px; border-radius: 22px; padding: 12px; background-color: #FF8D00; gap: 10px;">
+              <span class="font-montserrat font-semibold text-white whitespace-nowrap"
+                style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 14px; line-height: 21px; letter-spacing: 0%; color: #FFFFFF;">
+                Become a Partner
+              </span>
+              <svg class="w-3.5 h-3.5 stroke-white fill-none stroke-[2.5] shrink-0" viewBox="0 0 24 24">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+
+            <!-- Button 2: Speak To Team (Figma: width 149px, height 36px, radius 22px, padding 12px, border 1px solid #FF8D00) -->
+            <a href="./careers.html#contact"
+              class="flex flex-row items-center justify-center shrink-0 whitespace-nowrap shadow-sm hover:opacity-90 transition select-none"
+              style="width: 149px; height: 36px; border-radius: 22px; padding: 12px; background: rgba(255, 141, 0, 0.14); border: 1px solid #FF8D00; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); gap: 10px;">
+              <span class="font-montserrat font-semibold text-[#FF8D00] whitespace-nowrap"
+                style="font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 14px; line-height: 21px; letter-spacing: 0%; color: #FF8D00;">
+                Speak To Team
+              </span>
+              <svg class="w-3.5 h-3.5 stroke-[#FF8D00] fill-none stroke-[2.5] shrink-0" viewBox="0 0 24 24">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Inner Second Image Container (Centered, Straight Paddy Graphic) -->
+        <div class="relative w-full shrink-0 flex justify-center" style="max-width: 344.94px; min-height: 174.37px;">
+          
+          <!-- Primary Image (Figma: width 322.33px, height 160.83px, border-top-left-radius 29.24px, border-bottom-right-radius 29.24px) -->
+          <div class="overflow-hidden shadow-md shrink-0"
+            style="width: 322.33px; height: 160.83px; border-top-left-radius: 29.24px; border-bottom-right-radius: 29.24px;">
+            <img src="./public/assets/about-let.png" alt="Starizo Partnership" class="w-full h-full object-cover">
+          </div>
+
+          <!-- Straight Golden Rice Paddy Graphic (No Rotation, Straight Upright Alignment) -->
+          <img src="./public/assets/rice-g.png" alt=""
+            class="absolute right-0 bottom-0 pointer-events-none select-none z-10"
+            style="width: 78.44px; height: 110.57px; transform: translate(12px, 12px);">
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Mobile Footer (Copied 1:1 from Careers page) -->
+    <footer class="w-full bg-[#FDF7E9] text-black">
+      
+      <div class="px-6 pt-10 pb-12 w-full max-w-[341px] mx-auto">
+        
+        <!-- Brand Logo -->
+        <a href="./index.html" class="inline-block mb-8" aria-label="Starizo Home">
+          <img src="./public/assets/logo.svg" alt="starizo™" class="h-9 w-auto">
+        </a>
+
+        <!-- 2-Column Links Grid -->
+        <div class="grid grid-cols-2 gap-x-6 gap-y-6">
+
+          <!-- Column 1 (Left) -->
+          <div class="flex flex-col">
+            <!-- Products -->
+            <h4 class="font-montserrat font-bold text-[12px] leading-[20px] tracking-[0em] text-black mb-3">Products</h4>
+            <ul class="flex flex-col gap-2 mb-6 font-montserrat font-normal text-[12px] leading-[20px] tracking-[0em] text-black/80">
+              <li><a href="#" class="hover:text-starizo-orange transition-colors">Food & Beverage</a></li>
+              <li><a href="#" class="hover:text-starizo-orange transition-colors leading-[16px]">Cosmetics &<br>Personal Care</a></li>
+            </ul>
+
+            <!-- Single Line Bold Links -->
+            <div class="flex flex-col gap-3 font-montserrat font-bold text-[12px] leading-[20px] tracking-[0em] text-black mb-6">
+              <a href="#" class="hover:text-starizo-orange transition-colors">Partner with Us</a>
+              <a href="#" class="hover:text-starizo-orange transition-colors">Plant</a>
+              <a href="./careers.html" class="hover:text-starizo-orange transition-colors">Careers</a>
+              <a href="#" class="hover:text-starizo-orange transition-colors">Insights</a>
+              <a href="./careers.html#contact" class="hover:text-starizo-orange transition-colors">Contact</a>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="flex flex-col col-span-2 mt-2">
+              <h4 class="font-montserrat font-bold text-[12px] leading-[20px] tracking-[0em] text-black mb-3">Contact Details</h4>
+              <div class="w-[312px] h-[29px] flex items-center gap-[12px] whitespace-nowrap">
+                <img src="./public/assets/mail-icon.svg" alt="Email" class="w-[29px] h-[29px] shrink-0">
+                <p class="font-montserrat text-[12px] leading-[20px] tracking-[0em]">
+                  <span class="font-bold text-black">Email: </span>
+                  <a href="mailto:sales@starizo.com" class="font-normal text-black/80 hover:underline">sales@starizo.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2 (Right) -->
+          <div class="flex flex-col">
+            <!-- About -->
+            <h4 class="font-montserrat font-bold text-[12px] leading-[20px] tracking-[0em] text-black mb-3">About</h4>
+            <ul class="flex flex-col gap-2 font-montserrat font-normal text-[12px] leading-[20px] tracking-[0em] text-black/80">
+              <li><a href="./about.html" class="hover:text-starizo-orange transition-colors">Our Story</a></li>
+              <li><a href="#" class="hover:text-starizo-orange transition-colors">Research Lab</a></li>
+              <li><a href="#" class="hover:text-starizo-orange transition-colors">Technology & Quality</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="w-full bg-[#5D3700] text-white py-3 px-6 font-montserrat font-normal text-[10px] leading-[20px] tracking-[0em]">
+        <div class="w-full max-w-[341px] mx-auto flex flex-row items-center justify-between gap-2 whitespace-nowrap">
+          <span>© 2026 Starizo | All Rights Reserved.</span>
+          <div class="flex items-center gap-1 shrink-0">
+            <a href="#" class="hover:underline">Legal policy</a>
+            <span class="opacity-70">|</span>
+            <a href="#" class="hover:underline">Privacy policy</a>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+  </div> <!-- Closes Mobile View Wrapper -->
+
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('mobile-menu-btn-about');
+      const menu = document.getElementById('mobile-dropdown-about');
+      if (btn && menu) {
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      }
+    });
+  </script>
+
+</body>
+
+</html>
