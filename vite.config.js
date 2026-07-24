@@ -10,6 +10,7 @@ export default defineConfig({
         about: resolve(__dirname, 'about.html'),
         'product-rice-starch': resolve(__dirname, 'product-rice-starch.html'),
         'partner-with-us': resolve(__dirname, 'partner-with-us.html'),
+        contact: resolve(__dirname, 'contact.html'),
       },
     },
   },
