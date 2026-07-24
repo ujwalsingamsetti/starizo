@@ -9,6 +9,7 @@ export default defineConfig({
         careers: resolve(__dirname, 'careers.html'),
         about: resolve(__dirname, 'about.html'),
         'product-rice-starch': resolve(__dirname, 'product-rice-starch.html'),
+        'partner-with-us': resolve(__dirname, 'partner-with-us.html'),
       },
     },
   },
