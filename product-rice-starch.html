@@ -771,218 +771,380 @@
 
 
   <!-- ==================== MOBILE LAYOUT VIEW (xl:hidden) ==================== -->
-  <div class="block xl:hidden w-full min-h-screen bg-[#FDFBF3]">
+  <div class="block xl:hidden w-full min-h-screen bg-white overflow-x-hidden">
 
-    <!-- Mobile Header Navbar -->
-    <header class="w-full bg-white shadow-sm border-b border-gray-100 px-5 py-4 flex items-center justify-between sticky top-0 z-50">
-      <a href="./index.html" class="flex items-center gap-2">
-        <img src="./public/assets/logo.svg" alt="Starizo" class="h-8 w-auto">
+    <!-- Mobile Header (copied 1:1 from Home page index.html) -->
+    <header class="w-full h-[90px] bg-white flex items-center px-6 justify-between relative z-30 shadow-sm">
+      <a href="./index.html" class="flex items-center focus:outline-none" aria-label="Starizo Home">
+        <img src="./public/assets/logo.svg" alt="starizo™" class="h-8 w-auto">
       </a>
-      <button id="mobile-menu-btn-product" class="p-2 text-gray-700 hover:text-black focus:outline-none">
-        <svg class="w-6 h-6 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
+
+      <div class="flex items-center gap-3">
+        <!-- Contact Us -->
+        <a href="#"
+          class="bg-starizo-orange hover:bg-starizo-orange-dark text-white font-bold text-[12px] h-8 px-4 rounded-[16px] transition duration-200 flex items-center justify-center shadow-sm select-none">
+          Contact Us
+        </a>
+
+        <!-- Hamburger menu icon -->
+        <button id="mobile-menu-btn"
+          class="w-9 h-9 flex flex-col justify-center items-center gap-1.5 text-starizo-brown focus:outline-none"
+          aria-label="Toggle Navigation Menu">
+          <div class="w-6 h-0.5 bg-current rounded-full"></div>
+          <div class="w-6 h-0.5 bg-current rounded-full"></div>
+          <div class="w-6 h-0.5 bg-current rounded-full"></div>
+        </button>
+      </div>
+
+      <!-- Mobile navigation menu dropdown -->
+      <div id="mobile-dropdown"
+        class="hidden absolute top-[90px] left-0 right-0 bg-white border-b border-gray-100 shadow-md p-6 z-50 flex flex-col gap-4">
+        <a href="./product-rice-starch.html"
+          class="text-[16px] text-starizo-brown hover:text-starizo-orange py-2 border-b border-gray-50 transition duration-200">Products</a>
+        <a href="./about.html"
+          class="text-[16px] text-starizo-brown hover:text-starizo-orange py-2 border-b border-gray-50 transition duration-200">About Us</a>
+        <a href="#"
+          class="text-[16px] text-starizo-brown hover:text-starizo-orange py-2 border-b border-gray-50 transition duration-200">Partner
+          with Us</a>
+        <a href="./careers.html"
+          class="text-[16px] text-starizo-brown hover:text-starizo-orange py-2 border-b border-gray-50 transition duration-200">Careers</a>
+        <a href="#"
+          class="text-[16px] text-starizo-brown hover:text-starizo-orange py-2 transition duration-200">Insights</a>
+      </div>
     </header>
 
-    <!-- Mobile Dropdown Menu -->
-    <div id="mobile-dropdown-product" class="hidden bg-white border-b border-gray-200 px-6 py-4 flex flex-col gap-4 shadow-lg sticky top-[65px] z-40">
-      <a href="./product-rice-starch.html" class="font-bold text-starizo-orange text-[16px]">Products</a>
-      <a href="./about.html" class="font-medium text-gray-800 text-[16px]">About</a>
-      <a href="./index.html#partner" class="font-medium text-gray-800 text-[16px]">Partner with Us</a>
-      <a href="./index.html#research" class="font-medium text-gray-800 text-[16px]">Research Lab</a>
-      <a href="./careers.html" class="font-medium text-gray-800 text-[16px]">Careers</a>
-      <a href="./index.html#insights" class="font-medium text-gray-800 text-[16px]">Insights</a>
-      <a href="./careers.html#contact" class="bg-[#FF8D00] text-white text-center font-bold py-2.5 rounded-full mt-2">Contact Us</a>
-    </div>
-
-    <!-- Mobile Hero Main Section -->
-    <section class="w-full px-5 py-8 flex flex-col items-start text-left">
+    <!-- Mobile Hero Main Section (Target Specs: white bg, 342px width container, gap 24px) -->
+    <section class="w-full bg-white px-6 pt-8 pb-4 flex flex-col items-start text-left">
       
-      <!-- Breadcrumb -->
-      <div class="flex flex-wrap items-center gap-1.5 text-[12px] font-medium text-gray-500 mb-6">
-        <a href="./index.html">Products</a>
-        <span>/</span>
-        <a href="./index.html#food">Food & Beverage</a>
-        <span>/</span>
-        <span class="text-gray-900 font-semibold">Rice Starch</span>
-      </div>
-
-      <!-- Badge Header -->
-      <span class="font-montserrat font-bold text-[12px] uppercase tracking-wider text-black mb-2">
-        FOOD INGREDIENTS
-      </span>
-
-      <!-- Title -->
-      <h1 class="font-montserrat font-black text-[#00A256] text-[34px] leading-[42px] mb-4">
-        Rice Starch
-      </h1>
-
-      <!-- Description -->
-      <p class="font-montserrat font-medium text-gray-800 text-[15px] leading-[24px] mb-6">
-        Built on decades of rice processing expertise, STARIZO develops clean-label, rice-derived ingredients designed for modern industries and global manufacturing.
-      </p>
-
-      <!-- Buttons Stack/Row -->
-      <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full mb-8">
-        <a href="./careers.html#contact"
-          class="bg-[#FF8D00] text-white font-semibold text-[14px] py-3 px-6 rounded-full flex items-center justify-center gap-2 shadow-md">
-          <span>Contact Us</span>
-          <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewBox="0 0 24 24">
-            <polyline points="9 18 15 12 9 6"></polyline>
-          </svg>
-        </a>
-
-        <a href="#" download
-          class="text-[#FF8D00] font-semibold text-[14px] py-2 px-4 flex items-center justify-center gap-2">
-          <span>Download Brochure</span>
-          <svg class="w-4 h-4 stroke-current fill-none stroke-[2.5]" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
-          </svg>
-        </a>
-      </div>
-
-      <!-- Product Image Pouch Frame -->
-      <div class="w-full relative flex items-center justify-center py-4 mb-8">
-        <img src="./public/assets/product-rice-starch.png" alt="STARIZO Rice Starch"
-          class="w-[260px] h-auto object-contain mx-auto drop-shadow-md">
-      </div>
-
-      <!-- Mobile Highlights Grid -->
-      <div class="w-full grid grid-cols-2 gap-3 pt-6 border-t border-gray-200 mb-8">
-        <div class="flex items-center gap-2">
-          <div class="w-5 h-5 rounded-full bg-[#00A256] text-white flex items-center justify-center shrink-0">✓</div>
-          <span class="text-[13px] font-medium text-gray-800">Non-GMO</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <div class="w-5 h-5 rounded-full bg-[#00A256] text-white flex items-center justify-center shrink-0">✓</div>
-          <span class="text-[13px] font-medium text-gray-800">Gluten Free</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <div class="w-5 h-5 rounded-full bg-[#00A256] text-white flex items-center justify-center shrink-0">✓</div>
-          <span class="text-[13px] font-medium text-gray-800">Clean Label</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <div class="w-5 h-5 rounded-full bg-[#00A256] text-white flex items-center justify-center shrink-0">✓</div>
-          <span class="text-[13px] font-medium text-gray-800">Hypoallergenic</span>
-        </div>
-        <div class="flex items-center gap-2 col-span-2">
-          <div class="w-5 h-5 rounded-full bg-[#00A256] text-white flex items-center justify-center shrink-0">✓</div>
-          <span class="text-[13px] font-medium text-gray-800">Export Ready</span>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- Mobile Product Video Section (Height Increased: 320px) -->
-    <section class="w-full bg-[#FDFBF3] py-8 px-4 flex items-center justify-center relative">
-      <div class="w-full max-w-[460px] mx-auto px-2 flex items-center justify-center">
-        <div class="relative overflow-hidden shadow-xl group cursor-pointer mx-auto"
-          style="height: 320px; max-width: 95%; aspect-ratio: 2.1/1; border-top-left-radius: 44px; border-bottom-right-radius: 44px;">
-          <img src="./public/assets/product-vedio.png" alt="Why STARIZO? More Than Ingredient Supply"
-            class="w-full h-full object-cover block"
-            style="border-top-left-radius: 44px; border-bottom-right-radius: 44px;">
-        </div>
-      </div>
-    </section>
-
-    <!-- Mobile Application Explorer Section -->
-    <section class="w-full bg-[#FDFBF3] py-10 px-4 flex items-center justify-center relative">
-      <div class="w-full bg-white py-10 px-5 rounded-[44px] shadow-lg text-black">
+      <!-- Main Context Container (Figma: width 342px, min-height 314px, gap 24px) -->
+      <div class="w-full max-w-[342px] flex flex-col items-start justify-start gap-6">
         
-        <div class="flex items-center justify-center gap-2 mb-2">
-          <span class="w-[3px] h-[18px] bg-[#DF890C] rounded-full inline-block"></span>
-          <span class="font-montserrat font-bold uppercase text-[13px] tracking-[0.12em] text-[#DF890C]">
-            APPLICATION EXPLORER
-          </span>
-        </div>
-        <h2 class="font-montserrat font-bold text-black text-[20px] leading-[28px] text-center mb-8">
-          Designed For Multiple Food Systems
-        </h2>
+        <!-- Badge Header (Figma: 12px Montserrat Bold, letter-spacing 11%, line-height 22px, uppercase #000000) -->
+        <span class="font-montserrat font-bold text-black uppercase"
+          style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; line-height: 22px; letter-spacing: 0.11em; text-transform: uppercase; color: #000000;">
+          FOOD INGREDIENTS
+        </span>
 
-        <!-- Mobile Cards Stack (Single column) -->
-        <div class="flex flex-col gap-6 w-full max-w-[310px] mx-auto">
+        <!-- Headline Title (Figma: 32px Montserrat Black, line-height 54px, gradient #00A256 to #5DC671) -->
+        <h1 class="font-montserrat font-black"
+          style="font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 32px; line-height: 54px; letter-spacing: 0%; background: linear-gradient(145.88deg, #00A256 20.19%, #5DC671 105.95%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+          Rice Starch
+        </h1>
+
+        <!-- Description (Figma: 16px Montserrat Medium, line-height 30px, color #000000) -->
+        <p class="font-montserrat font-medium text-black"
+          style="font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 16px; line-height: 30px; letter-spacing: 0%; color: #000000;">
+          Built on decades of rice processing expertise, STARIZO develops clean-label, rice-derived ingredients designed for modern industries and global manufacturing.
+        </p>
+
+        <!-- Buttons Container (Figma Spec 1:1: Horizontal Row, width 319px, height 36px, gap 21px) -->
+        <div class="flex flex-row items-center justify-start gap-[21px] w-full" style="max-width: 319px; min-height: 36px;">
+          <!-- Primary Action Button: Contact Us -->
+          <a href="#"
+            class="bg-[#FF8D00] hover:bg-[#e07c00] text-white font-montserrat font-bold text-[13px] h-[36px] px-5 rounded-full flex items-center justify-center gap-1.5 transition duration-200 shadow-sm shrink-0">
+            <span>Contact Us</span>
+            <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-[2.5]" viewBox="0 0 24 24">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+
+          <!-- Secondary Action Button: Download Brochure -->
+          <a href="#" download
+            class="text-[#FF8D00] hover:text-[#e07c00] font-montserrat font-semibold text-[13px] h-[36px] flex items-center justify-center gap-1.5 transition duration-200 shrink-0">
+            <span>Download Brochure</span>
+            <svg class="w-4 h-4 stroke-current fill-none stroke-[2.5]" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Product Image Pouch Frame (Main Rice Bag Image Only) -->
+      <div class="w-full relative flex items-center justify-center py-4 my-2">
+        <!-- Main Foreground Rice Bag Pouch Image -->
+        <div class="relative z-10 filter drop-shadow-xl">
+          <img src="./public/assets/rice-bag-hero.png" alt="STARIZO Rice Starch Pouch"
+            class="w-[260px] sm:w-[280px] h-auto object-contain mx-auto">
+        </div>
+      </div>
+
+      <!-- Mobile Highlights Grid Container (Figma Spec 1:1: width 286.15px, height 136.27px, gap 19px, centered) -->
+      <div class="mx-auto flex flex-col justify-between items-center my-6"
+        style="width: 286.15px; min-height: 136.27px; gap: 19px;">
+        
+        <!-- Row 1: Non-GMO & Gluten Free -->
+        <div class="w-full flex flex-row items-center justify-between">
+          <div class="flex items-center gap-[12px] shrink-0">
+            <div class="w-[32.76px] h-[32.76px] rounded-full bg-[#00A256] flex items-center justify-center shrink-0 shadow-sm">
+              <svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span class="font-montserrat font-normal text-[12.82px] leading-[15px] text-black">Non-GMO</span>
+          </div>
+
+          <div class="flex items-center gap-[12px] shrink-0">
+            <div class="w-[32.76px] h-[32.76px] rounded-full bg-[#00A256] flex items-center justify-center shrink-0 shadow-sm">
+              <svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span class="font-montserrat font-normal text-[12.82px] leading-[15px] text-black">Gluten Free</span>
+          </div>
+        </div>
+
+        <!-- Row 2: Clean Label & Hypoallergenic -->
+        <div class="w-full flex flex-row items-center justify-between">
+          <div class="flex items-center gap-[12px] shrink-0">
+            <div class="w-[32.76px] h-[32.76px] rounded-full bg-[#00A256] flex items-center justify-center shrink-0 shadow-sm">
+              <svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span class="font-montserrat font-normal text-[12.82px] leading-[15px] text-black">Clean Label</span>
+          </div>
+
+          <div class="flex items-center gap-[12px] shrink-0">
+            <div class="w-[32.76px] h-[32.76px] rounded-full bg-[#00A256] flex items-center justify-center shrink-0 shadow-sm">
+              <svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span class="font-montserrat font-normal text-[12.82px] leading-[15px] text-black">Hypoallergenic</span>
+          </div>
+        </div>
+
+        <!-- Row 3: Export Ready -->
+        <div class="w-full flex flex-row items-center justify-start">
+          <div class="flex items-center gap-[12px] shrink-0">
+            <div class="w-[32.76px] h-[32.76px] rounded-full bg-[#00A256] flex items-center justify-center shrink-0 shadow-sm">
+              <svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <span class="font-montserrat font-normal text-[12.82px] leading-[15px] text-black">Export Ready</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Mobile "Why Manufacturers Choose Rice Starch" Section (Target Specs: bg #00A256, 2 columns x 2 rows cards grid 1:1) -->
+    <section class="w-full bg-[#00A256] py-10 px-4 flex flex-col items-center justify-center text-white relative">
+      
+      <!-- Section Header with Vertical Orange Accent Bar (Exact Specs: 16px Montserrat Regular, 34px line-height, 11% tracking, centered) -->
+      <div class="flex items-center justify-center gap-3 mb-8 w-full max-w-[340px] text-center">
+        <div class="w-[5px] h-[36px] bg-[#FF8D00] rounded-full shrink-0"></div>
+        <h2 class="font-montserrat text-white uppercase text-center"
+          style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 16px; line-height: 34px; letter-spacing: 0.11em; text-align: center; text-transform: uppercase; color: #FFFFFF;">
+          WHY MANUFACTURERS CHOOSE RICE STARCH
+        </h2>
+      </div>
+
+      <!-- 2 Columns x 2 Rows Cards Grid (Decreased padding matching screenshot 1:1) -->
+      <div class="w-full max-w-[360px] grid grid-cols-2 gap-3 sm:gap-4">
+
+        <!-- Card 1: Ultra Fine Granules (Leaf corners: Top-Left & Bottom-Right 36px) -->
+        <div class="bg-white text-black p-1.5 pb-3 flex flex-col justify-start shadow-lg transition-transform duration-300 hover:-translate-y-1"
+          style="border-top-left-radius: 36px; border-bottom-right-radius: 36px; min-height: 235px;">
+          <!-- Card Image -->
+          <div class="w-full overflow-hidden shrink-0 mb-2"
+            style="height: 120px; border-top-left-radius: 28px; border-bottom-right-radius: 28px;">
+            <img src="./public/assets/product-rice.png" alt="Ultra Fine Granules" class="w-full h-full object-cover">
+          </div>
+          <!-- Card Content -->
+          <div class="px-1.5 flex flex-col justify-start gap-1">
+            <h3 class="font-montserrat font-bold text-[#5D3700] text-[13px] sm:text-[14px] leading-snug">
+              Ultra Fine Granules
+            </h3>
+            <p class="font-montserrat font-normal text-black/75 text-[11px] sm:text-[12px] leading-relaxed">
+              Creates smoother mouthfeel and improved texture performance.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2: Stable Under Processing (Leaf corners: Top-Right & Bottom-Left 36px) -->
+        <div class="bg-white text-black p-1.5 pb-3 flex flex-col justify-start shadow-lg transition-transform duration-300 hover:-translate-y-1"
+          style="border-top-right-radius: 36px; border-bottom-left-radius: 36px; min-height: 235px;">
+          <!-- Card Image -->
+          <div class="w-full overflow-hidden shrink-0 mb-2"
+            style="height: 120px; border-top-right-radius: 28px; border-bottom-left-radius: 28px;">
+            <img src="./public/assets/product-expect.png" alt="Stable Under Processing" class="w-full h-full object-cover">
+          </div>
+          <!-- Card Content -->
+          <div class="px-1.5 flex flex-col justify-start gap-1">
+            <h3 class="font-montserrat font-bold text-[#5D3700] text-[13px] sm:text-[14px] leading-snug">
+              Stable Under Processing
+            </h3>
+            <p class="font-montserrat font-normal text-black/75 text-[11px] sm:text-[12px] leading-relaxed">
+              Maintains consistency under heat and varying pH conditions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3: Clean Label Compatibility (Leaf corners: Top-Left & Bottom-Right 36px) -->
+        <div class="bg-white text-black p-1.5 pb-3 flex flex-col justify-start shadow-lg transition-transform duration-300 hover:-translate-y-1"
+          style="border-top-left-radius: 36px; border-bottom-right-radius: 36px; min-height: 235px;">
+          <!-- Card Image -->
+          <div class="w-full overflow-hidden shrink-0 mb-2"
+            style="height: 120px; border-top-left-radius: 28px; border-bottom-right-radius: 28px;">
+            <img src="./public/assets/product-clean.png" alt="Clean Label Compatibility" class="w-full h-full object-cover">
+          </div>
+          <!-- Card Content -->
+          <div class="px-1.5 flex flex-col justify-start gap-1">
+            <h3 class="font-montserrat font-bold text-[#5D3700] text-[13px] sm:text-[14px] leading-snug">
+              Clean Label Compatibility
+            </h3>
+            <p class="font-montserrat font-normal text-black/75 text-[11px] sm:text-[12px] leading-relaxed">
+              Supports simpler ingredient declarations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4: Excellent Digestibility (Leaf corners: Top-Right & Bottom-Left 36px) -->
+        <div class="bg-white text-black p-1.5 pb-3 flex flex-col justify-start shadow-lg transition-transform duration-300 hover:-translate-y-1"
+          style="border-top-right-radius: 36px; border-bottom-left-radius: 36px; min-height: 235px;">
+          <!-- Card Image -->
+          <div class="w-full overflow-hidden shrink-0 mb-2"
+            style="height: 120px; border-top-right-radius: 28px; border-bottom-left-radius: 28px;">
+            <img src="./public/assets/product-excellet.png" alt="Excellent Digestibility" class="w-full h-full object-cover">
+          </div>
+          <!-- Card Content -->
+          <div class="px-1.5 flex flex-col justify-start gap-1">
+            <h3 class="font-montserrat font-bold text-[#5D3700] text-[13px] sm:text-[14px] leading-snug">
+              Excellent Digestibility
+            </h3>
+            <p class="font-montserrat font-normal text-black/75 text-[11px] sm:text-[12px] leading-relaxed">
+              Suitable for sensitive formulations.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Mobile Product Video Section (Decreased height matching Targeted Image 1:1) -->
+    <section class="w-full bg-[#FDFBF3] py-6 px-4 flex items-center justify-center relative">
+      <div class="w-full max-w-[360px] mx-auto flex items-center justify-center">
+        <div class="relative overflow-hidden shadow-xl group cursor-pointer w-full"
+          style="border-top-left-radius: 40px; border-bottom-right-radius: 40px;">
+          <img src="./public/assets/product-vedio.png" alt="Why STARIZO? More Than Ingredient Supply"
+            class="w-full h-auto object-contain block"
+            style="border-top-left-radius: 40px; border-bottom-right-radius: 40px;">
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile Application Explorer Section (Exact Figma Specs: 347px width container, 2x2 top grid + centered Infant Nutrition card 160px x 184px) -->
+    <section class="w-full bg-[#FDFBF3] py-8 px-4 flex items-center justify-center relative">
+      <div class="w-full max-w-[347px] bg-white py-8 px-3.5 rounded-[44px] shadow-lg text-black mx-auto flex flex-col items-center gap-6"
+        style="min-height: 719px;">
+        
+        <!-- Header Context Container (347px x 92px) -->
+        <div class="w-full flex flex-col items-center justify-center text-center gap-2" style="max-width: 347px;">
+          <!-- Subtitle / Tagline -->
+          <div class="flex items-center justify-center gap-2">
+            <span class="w-[5px] h-[24px] bg-[#DF890C] rounded-full inline-block shrink-0"></span>
+            <span class="font-montserrat text-[#5D3700] uppercase"
+              style="font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: 16px; line-height: 54px; letter-spacing: 0.11em; text-transform: uppercase;">
+              APPLICATION EXPLORER
+            </span>
+          </div>
+
+          <!-- Headline Title -->
+          <h2 class="font-montserrat font-bold text-black text-center"
+            style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 16px; line-height: 30px; letter-spacing: 0%; color: #000000;">
+            Designed For Multiple Food Systems
+          </h2>
+        </div>
+
+        <!-- 4-Cards Grid: 2 Columns x 2 Rows (347px width, gap 14px) -->
+        <div class="w-full grid grid-cols-2 gap-3.5" style="max-width: 347px;">
           
-          <!-- Bakery -->
-          <div class="bg-[#FDFBEE] rounded-[24px] p-3 flex flex-col shadow-sm">
-            <div class="relative w-full h-[160px]">
-              <div class="w-full h-full overflow-hidden" style="border-top-left-radius: 28px; border-bottom-right-radius: 28px;">
+          <!-- Card 1: Bakery -->
+          <div class="bg-[#FDFBF3] rounded-[24px] p-2 flex flex-col text-left shadow-sm">
+            <div class="relative w-full h-[105px] shrink-0">
+              <div class="w-full h-full overflow-hidden" style="border-top-left-radius: 20px; border-bottom-right-radius: 20px;">
                 <img src="./public/assets/product-bakery.png" alt="Bakery" class="w-full h-full object-cover">
               </div>
-              <div class="w-[44px] h-[44px] bg-white rounded-full shadow-md flex items-center justify-center absolute -bottom-[14px] left-[14px] z-10 border border-gray-100">
-                <span class="text-[22px]">🍞</span>
+              <div class="w-[36px] h-[36px] bg-white rounded-full shadow-md flex items-center justify-center absolute -bottom-[12px] left-[8px] z-10">
+                <span class="text-[18px]">🍞</span>
               </div>
             </div>
-            <div class="pt-5 px-2 pb-1">
-              <h3 class="font-montserrat font-bold text-[#6A3E00] text-[16px]">Bakery</h3>
-              <p class="font-montserrat text-black/70 text-[13px]">Improve softness and structure.</p>
+            <div class="pt-4 px-1.5 pb-1 flex flex-col gap-0.5">
+              <h3 class="font-montserrat font-bold text-[#5D3700] text-[13px] leading-tight">Bakery</h3>
+              <p class="font-montserrat font-normal text-black/75 text-[10px] leading-snug">Improve softness and structure.</p>
             </div>
           </div>
 
-          <!-- Dairy -->
-          <div class="bg-[#FDFBEE] rounded-[24px] p-3 flex flex-col shadow-sm">
-            <div class="relative w-full h-[160px]">
-              <div class="w-full h-full overflow-hidden" style="border-top-left-radius: 28px; border-bottom-right-radius: 28px;">
+          <!-- Card 2: Dairy -->
+          <div class="bg-[#FDFBF3] rounded-[24px] p-2 flex flex-col text-left shadow-sm">
+            <div class="relative w-full h-[105px] shrink-0">
+              <div class="w-full h-full overflow-hidden" style="border-top-left-radius: 20px; border-bottom-right-radius: 20px;">
                 <img src="./public/assets/product-milk.png" alt="Dairy" class="w-full h-full object-cover">
               </div>
-              <div class="w-[44px] h-[44px] bg-white rounded-full shadow-md flex items-center justify-center absolute -bottom-[14px] left-[14px] z-10 border border-gray-100">
-                <span class="text-[22px]">🥛</span>
+              <div class="w-[36px] h-[36px] bg-white rounded-full shadow-md flex items-center justify-center absolute -bottom-[12px] left-[8px] z-10">
+                <span class="text-[18px]">🥛</span>
               </div>
             </div>
-            <div class="pt-5 px-2 pb-1">
-              <h3 class="font-montserrat font-bold text-[#6A3E00] text-[16px]">Dairy</h3>
-              <p class="font-montserrat text-black/70 text-[13px]">Create creamier textures.</p>
+            <div class="pt-4 px-1.5 pb-1 flex flex-col gap-0.5">
+              <h3 class="font-montserrat font-bold text-[#5D3700] text-[13px] leading-tight">Dairy</h3>
+              <p class="font-montserrat font-normal text-black/75 text-[10px] leading-snug">Create creamier textures.</p>
             </div>
           </div>
 
-          <!-- Ready Meals -->
-          <div class="bg-[#FDFBEE] rounded-[24px] p-3 flex flex-col shadow-sm">
-            <div class="relative w-full h-[160px]">
-              <div class="w-full h-full overflow-hidden" style="border-top-left-radius: 28px; border-bottom-right-radius: 28px;">
+          <!-- Card 3: Ready Meals -->
+          <div class="bg-[#FDFBF3] rounded-[24px] p-2 flex flex-col text-left shadow-sm">
+            <div class="relative w-full h-[105px] shrink-0">
+              <div class="w-full h-full overflow-hidden" style="border-top-left-radius: 20px; border-bottom-right-radius: 20px;">
                 <img src="./public/assets/product-meals.png" alt="Ready Meals" class="w-full h-full object-cover">
               </div>
-              <div class="w-[44px] h-[44px] bg-white rounded-full shadow-md flex items-center justify-center absolute -bottom-[14px] left-[14px] z-10 border border-gray-100">
-                <span class="text-[22px]">🥣</span>
+              <div class="w-[36px] h-[36px] bg-white rounded-full shadow-md flex items-center justify-center absolute -bottom-[12px] left-[8px] z-10">
+                <span class="text-[18px]">🥣</span>
               </div>
             </div>
-            <div class="pt-5 px-2 pb-1">
-              <h3 class="font-montserrat font-bold text-[#6A3E00] text-[16px]">Ready Meals</h3>
-              <p class="font-montserrat text-black/70 text-[13px]">Improve softness and structure.</p>
+            <div class="pt-4 px-1.5 pb-1 flex flex-col gap-0.5">
+              <h3 class="font-montserrat font-bold text-[#5D3700] text-[13px] leading-tight">Ready Meals</h3>
+              <p class="font-montserrat font-normal text-black/75 text-[10px] leading-snug">Improve softness and structure.</p>
             </div>
           </div>
 
-          <!-- Confectionery -->
-          <div class="bg-[#FDFBEE] rounded-[24px] p-3 flex flex-col shadow-sm">
-            <div class="relative w-full h-[160px]">
-              <div class="w-full h-full overflow-hidden" style="border-top-left-radius: 28px; border-bottom-right-radius: 28px;">
+          <!-- Card 4: Confectionery -->
+          <div class="bg-[#FDFBF3] rounded-[24px] p-2 flex flex-col text-left shadow-sm">
+            <div class="relative w-full h-[105px] shrink-0">
+              <div class="w-full h-full overflow-hidden" style="border-top-left-radius: 20px; border-bottom-right-radius: 20px;">
                 <img src="./public/assets/product-confectionery.png" alt="Confectionery" class="w-full h-full object-cover">
               </div>
-              <div class="w-[44px] h-[44px] bg-white rounded-full shadow-md flex items-center justify-center absolute -bottom-[14px] left-[14px] z-10 border border-gray-100">
-                <span class="text-[22px]">🍬</span>
+              <div class="w-[36px] h-[36px] bg-white rounded-full shadow-md flex items-center justify-center absolute -bottom-[12px] left-[8px] z-10">
+                <span class="text-[18px]">🍬</span>
               </div>
             </div>
-            <div class="pt-5 px-2 pb-1">
-              <h3 class="font-montserrat font-bold text-[#6A3E00] text-[16px]">Confectionery</h3>
-              <p class="font-montserrat text-black/70 text-[13px]">Support coating and smooth finish.</p>
+            <div class="pt-4 px-1.5 pb-1 flex flex-col gap-0.5">
+              <h3 class="font-montserrat font-bold text-[#5D3700] text-[13px] leading-tight">Confectionery</h3>
+              <p class="font-montserrat font-normal text-black/75 text-[10px] leading-snug">Support coating and smooth finish.</p>
             </div>
           </div>
 
-          <!-- Infant Nutrition -->
-          <div class="bg-[#FDFBEE] rounded-[24px] p-3 flex flex-col shadow-sm">
-            <div class="relative w-full h-[160px]">
-              <div class="w-full h-full overflow-hidden" style="border-top-left-radius: 28px; border-bottom-right-radius: 28px;">
-                <img src="./public/assets/product-nutrition.png" alt="Infant Nutrition" class="w-full h-full object-cover">
-              </div>
-              <div class="w-[44px] h-[44px] bg-white rounded-full shadow-md flex items-center justify-center absolute -bottom-[14px] left-[14px] z-10 border border-gray-100">
-                <span class="text-[22px]">👶</span>
-              </div>
+        </div>
+
+        <!-- Card 5: Infant Nutrition (Centered beneath top grid, width 160.13px, height 184.57px) -->
+        <div class="w-[160px] bg-[#FDFBF3] rounded-[24px] p-2 flex flex-col text-left shadow-sm mx-auto shrink-0"
+          style="min-height: 184px;">
+          <div class="relative w-full h-[105px] shrink-0">
+            <div class="w-full h-full overflow-hidden" style="border-top-left-radius: 20px; border-bottom-right-radius: 20px;">
+              <img src="./public/assets/product-nutrition.png" alt="Infant Nutrition" class="w-full h-full object-cover">
             </div>
-            <div class="pt-5 px-2 pb-1">
-              <h3 class="font-montserrat font-bold text-[#6A3E00] text-[16px]">Infant Nutrition</h3>
-              <p class="font-montserrat text-black/70 text-[13px]">High digestibility and gentle texture.</p>
+            <div class="w-[36px] h-[36px] bg-white rounded-full shadow-md flex items-center justify-center absolute -bottom-[12px] left-[8px] z-10">
+              <span class="text-[18px]">👶</span>
             </div>
           </div>
-
+          <div class="pt-4 px-1.5 pb-1 flex flex-col gap-0.5">
+            <h3 class="font-montserrat font-bold text-[#5D3700] text-[13px] leading-tight">Infant Nutrition</h3>
+            <p class="font-montserrat font-normal text-black/75 text-[10px] leading-snug">High digestibility and gentle texture.</p>
+          </div>
         </div>
 
       </div>
@@ -1126,11 +1288,11 @@
 
     </section>
 
-    <!-- Mobile Footer -->
+    <!-- Mobile Footer (copied 1:1 from index.html) -->
     <footer class="w-full bg-[#FDF7E9] text-black">
-      
+
       <div class="px-6 pt-10 pb-12 w-full max-w-[341px] mx-auto">
-        
+
         <!-- Brand Logo -->
         <a href="#" class="inline-block mb-8" aria-label="Starizo Home">
           <img src="./public/assets/logo.svg" alt="starizo™" class="h-9 w-auto">
@@ -1144,15 +1306,15 @@
             <!-- Products -->
             <h4 class="font-montserrat font-bold text-[12px] leading-[20px] tracking-[0em] text-black mb-3">Products</h4>
             <ul class="flex flex-col gap-2 mb-6 font-montserrat font-normal text-[12px] leading-[20px] tracking-[0em] text-black/80">
-              <li><a href="#" class="hover:text-starizo-orange transition-colors">Food & Beverage</a></li>
-              <li><a href="#" class="hover:text-starizo-orange transition-colors leading-[16px]">Cosmetics &<br>Personal Care</a></li>
+              <li><a href="#" class="hover:text-starizo-orange transition-colors">Food &amp; Beverage</a></li>
+              <li><a href="#" class="hover:text-starizo-orange transition-colors leading-[16px]">Cosmetics &amp;<br>Personal Care</a></li>
             </ul>
 
             <!-- Single Line Bold Links -->
             <div class="flex flex-col gap-3 font-montserrat font-bold text-[12px] leading-[20px] tracking-[0em] text-black mb-6">
               <a href="#" class="hover:text-starizo-orange transition-colors">Partner with Us</a>
               <a href="#" class="hover:text-starizo-orange transition-colors">Plant</a>
-              <a href="#" class="hover:text-starizo-orange transition-colors">Careers</a>
+              <a href="./careers.html" class="hover:text-starizo-orange transition-colors">Careers</a>
               <a href="#" class="hover:text-starizo-orange transition-colors">Insights</a>
               <a href="#" class="hover:text-starizo-orange transition-colors">Contact</a>
             </div>
@@ -1177,7 +1339,7 @@
             <ul class="flex flex-col gap-2 font-montserrat font-normal text-[12px] leading-[20px] tracking-[0em] text-black/80">
               <li><a href="#" class="hover:text-starizo-orange transition-colors">Our Story</a></li>
               <li><a href="#" class="hover:text-starizo-orange transition-colors">Research Lab</a></li>
-              <li><a href="#" class="hover:text-starizo-orange transition-colors">Technology & Quality</a></li>
+              <li><a href="#" class="hover:text-starizo-orange transition-colors">Technology &amp; Quality</a></li>
             </ul>
           </div>
 
@@ -1204,11 +1366,19 @@
   <!-- Mobile Toggle & FAQ Script -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const btn = document.getElementById('mobile-menu-btn-product');
-      const menu = document.getElementById('mobile-dropdown-product');
-      if (btn && menu) {
-        btn.addEventListener('click', () => {
-          menu.classList.toggle('hidden');
+      const menuBtn = document.getElementById('mobile-menu-btn') || document.getElementById('mobile-menu-btn-product');
+      const dropdown = document.getElementById('mobile-dropdown') || document.getElementById('mobile-dropdown-product');
+
+      if (menuBtn && dropdown) {
+        menuBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          dropdown.classList.toggle('hidden');
+        });
+
+        document.addEventListener('click', (e) => {
+          if (!dropdown.contains(e.target) && !menuBtn.contains(e.target)) {
+            dropdown.classList.add('hidden');
+          }
         });
       }
 
