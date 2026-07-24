@@ -25,16 +25,14 @@
     <!-- Hero Section with Dual Rotated Loopers -->
     <div class="relative w-full bg-white overflow-hidden pb-16 pt-6">
 
-      <!-- Left Looper-1 (-60deg rotation) -->
-      <div class="absolute left-[-200px] top-[-100px] w-[1280px] h-[800px] pointer-events-none opacity-40 select-none z-0"
-        style="transform: rotate(-60deg);">
-        <img src="./public/assets/Looper-1.png" alt="" class="w-full h-full object-contain">
+      <!-- Left Looper-3 (Normal orientation, 100% opacity) -->
+      <div class="absolute left-[-200px] top-[-100px] w-[1280px] h-[800px] pointer-events-none opacity-100 select-none z-0">
+        <img src="./public/assets/Looper-3.png" alt="" class="w-full h-full object-contain">
       </div>
 
-      <!-- Right Looper-1 (-60deg rotation) -->
-      <div class="absolute right-[-200px] top-[-100px] w-[1280px] h-[800px] pointer-events-none opacity-40 select-none z-0"
-        style="transform: rotate(-60deg);">
-        <img src="./public/assets/Looper-1.png" alt="" class="w-full h-full object-contain">
+      <!-- Right Looper-2 (Normal orientation, no rotation) -->
+      <div class="absolute right-[-200px] top-[-100px] w-[1280px] h-[800px] pointer-events-none opacity-100 select-none z-0">
+        <img src="./public/assets/Looper-2.png" alt="" class="w-full h-full object-contain">
       </div>
 
       <!-- Desktop Navbar Floating Card Header -->
@@ -124,21 +122,14 @@
               </p>
             </div>
 
-            <!-- Center Decorative Badge / Pin -->
-            <div class="relative z-10 flex items-center justify-start my-6">
-              <div class="w-[60px] h-[60px] rounded-full bg-black/90 text-white flex items-center justify-center font-bold text-[22px] shadow-xl border-2 border-white/20">
-                <span class="text-[#FF8D00]">T</span>
-              </div>
-            </div>
+
 
             <!-- Bottom Content Block (Email & Social Icons) -->
             <div class="relative z-10 flex flex-col gap-8">
 
-              <!-- Email Row -->
-              <div class="flex items-start gap-4">
-                <div class="w-[50px] h-[50px] rounded-full bg-white flex items-center justify-center shrink-0 shadow-sm">
-                  <img src="./public/assets/contact-us-mail.svg" alt="Mail" class="w-6 h-6 object-contain">
-                </div>
+              <!-- Email Block (No white background circle, direct 50x50px icon stacked above text) -->
+              <div class="flex flex-col items-start gap-3">
+                <img src="./public/assets/contact-us-mail.svg" alt="Mail" class="w-[50px] h-[50px] object-contain">
                 <div class="flex flex-col gap-0.5">
                   <span class="font-montserrat font-bold text-[20.77px] text-white leading-[31px]">
                     Email
@@ -149,19 +140,19 @@
                 </div>
               </div>
 
-              <!-- Horizontal Social Icons Row -->
-              <div class="flex items-center gap-4">
-                <a href="#" class="w-[42px] h-[42px] rounded-full bg-white flex items-center justify-center shadow-sm hover:scale-105 transition-transform">
-                  <img src="./public/assets/linkdin.svg" alt="LinkedIn" class="w-5 h-5 object-contain">
+              <!-- Horizontal Social Icons Row (52x52px white circles with 36x36px inner icons) -->
+              <div class="flex items-center gap-5">
+                <a href="#" class="w-[52px] h-[52px] rounded-full bg-white flex items-center justify-center shadow-md hover:scale-105 transition-transform shrink-0">
+                  <img src="./public/assets/linkdin.svg" alt="LinkedIn" class="w-9 h-9 object-contain">
                 </a>
-                <a href="#" class="w-[42px] h-[42px] rounded-full bg-white flex items-center justify-center shadow-sm hover:scale-105 transition-transform">
-                  <img src="./public/assets/instagram.svg" alt="Instagram" class="w-5 h-5 object-contain">
+                <a href="#" class="w-[52px] h-[52px] rounded-full bg-white flex items-center justify-center shadow-md hover:scale-105 transition-transform shrink-0">
+                  <img src="./public/assets/instagram.svg" alt="Instagram" class="w-9 h-9 object-contain">
                 </a>
-                <a href="#" class="w-[42px] h-[42px] rounded-full bg-white flex items-center justify-center shadow-sm hover:scale-105 transition-transform">
-                  <img src="./public/assets/x-twetter.svg" alt="X" class="w-5 h-5 object-contain">
+                <a href="#" class="w-[52px] h-[52px] rounded-full bg-white flex items-center justify-center shadow-md hover:scale-105 transition-transform shrink-0">
+                  <img src="./public/assets/x-twetter.svg" alt="X" class="w-9 h-9 object-contain">
                 </a>
-                <a href="#" class="w-[42px] h-[42px] rounded-full bg-white flex items-center justify-center shadow-sm hover:scale-105 transition-transform">
-                  <img src="./public/assets/youtube.svg" alt="YouTube" class="w-5 h-5 object-contain">
+                <a href="#" class="w-[52px] h-[52px] rounded-full bg-white flex items-center justify-center shadow-md hover:scale-105 transition-transform shrink-0">
+                  <img src="./public/assets/youtube.svg" alt="YouTube" class="w-9 h-9 object-contain">
                 </a>
               </div>
 
@@ -169,7 +160,7 @@
 
             <!-- Right Bottom Leaf Watermark (Opacity 0.24) -->
             <img src="./public/assets/contact-us-leaf.svg" alt=""
-              class="absolute bottom-0 right-0 w-[198px] h-[260px] opacity-25 pointer-events-none select-none z-0">
+              class="absolute bottom-0 right-0 w-[198px] h-[260px] opacity-100 pointer-events-none select-none z-0">
 
           </div>
 
@@ -352,16 +343,25 @@
   <!-- ==================== MOBILE LAYOUT (lg:hidden) ==================== -->
   <div class="block lg:hidden w-full min-h-screen flex flex-col justify-between">
 
-    <!-- Mobile Header -->
-    <header class="w-full bg-white px-5 py-4 flex items-center justify-between border-b border-gray-100 sticky top-0 z-50">
+    <!-- Mobile Header (Height 100px) -->
+    <header class="w-full h-[100px] bg-white px-4 flex items-center justify-between border-b border-gray-100 sticky top-0 z-50">
       <a href="./index.html">
         <img src="./public/assets/logo.svg" alt="Starizo" class="h-8 w-auto">
       </a>
-      <button id="mobile-menu-btn" class="p-2 text-black focus:outline-none" aria-label="Toggle Menu">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
+      <div class="flex items-center gap-3">
+        <a href="./contact.html"
+          class="bg-[#FF8D00] hover:bg-[#e07c00] text-white font-montserrat font-semibold text-[13px] px-4 py-2 rounded-full flex items-center gap-1.5 shadow-sm transition-all select-none">
+          <span>Contact Us</span>
+          <svg class="w-3.5 h-3.5 fill-none stroke-current stroke-[2.5]" viewBox="0 0 24 24">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+        <button id="mobile-menu-btn" class="p-1.5 text-black focus:outline-none" aria-label="Toggle Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
 
       <!-- Mobile Dropdown -->
       <div id="mobile-dropdown" class="hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-lg px-6 py-4 flex flex-col gap-3">
@@ -374,113 +374,129 @@
       </div>
     </header>
 
-    <!-- Mobile Hero & Contact Container -->
-    <main class="w-full px-4 py-8 flex flex-col items-center gap-8">
+    <!-- Mobile Hero & Contact Container with Background Loopers -->
+    <main class="w-full px-3 py-8 flex flex-col items-center gap-8 relative bg-[#FDFBF3] overflow-hidden">
 
-      <!-- Header Title Block -->
-      <div class="w-full max-w-[340px] text-center flex flex-col items-center gap-2 mx-auto">
-        <span class="font-montserrat font-bold text-[13px] text-black uppercase tracking-[0.11em]">
-          CONTACT STARIZO
-        </span>
-        <h1 class="text-center">
-          <span class="font-montserrat font-black text-[26px] text-black leading-tight block">
-            Let’s Build Better
+      <!-- Mobile Background Loopers (Enhanced contrast & size) -->
+      <div class="absolute left-[-50px] top-[10px] w-[260px] h-[420px] pointer-events-none opacity-100 select-none z-0"
+        style="filter: contrast(160%) saturate(140%);">
+        <img src="./public/assets/Looper-3.png" alt="" class="w-full h-full object-contain">
+      </div>
+
+      <div class="absolute right-[-50px] top-[30px] w-[260px] h-[420px] pointer-events-none opacity-100 select-none z-0"
+        style="filter: contrast(160%) saturate(140%);">
+        <img src="./public/assets/Looper-2.png" alt="" class="w-full h-full object-contain">
+      </div>
+
+      <div class="absolute right-[-40px] top-[520px] w-[220px] h-[360px] pointer-events-none opacity-100 select-none z-0"
+        style="filter: contrast(160%) saturate(140%);">
+        <img src="./public/assets/Looper-1.png" alt="" class="w-full h-full object-contain">
+      </div>
+
+      <!-- Mobile Outer Parent Container Card (Width 340px to allow side loopers to shine) -->
+      <div class="relative z-10 w-full max-w-[340px] bg-white rounded-[20px] shadow-[0px_10px_40px_rgba(0,0,0,0.06)] border border-gray-100 p-5 py-6 flex flex-col gap-6 mx-auto">
+
+        <!-- Header Title Block (Inside Card) -->
+        <div class="w-full text-center flex flex-col items-center gap-2 mx-auto pb-2">
+          <span class="font-montserrat font-bold text-[13px] text-black uppercase tracking-[0.11em]">
+            CONTACT STARIZO
           </span>
-          <span class="font-montserrat font-normal text-[26px] text-[#00A256] leading-tight block">
-            Ingredients. Together.
-          </span>
-        </h1>
-      </div>
-
-      <!-- Mobile Contact Info Orange Card -->
-      <div class="w-full max-w-[340px] bg-[#FF8D00] rounded-[16px] p-6 flex flex-col gap-6 relative overflow-hidden shadow-lg mx-auto">
-        <div class="flex flex-col gap-1 z-10">
-          <h2 class="font-poppins font-semibold text-[22px] text-white">Contact Information</h2>
-          <p class="font-poppins font-normal text-[14px] text-white/90">Say something to start a live chat!</p>
+          <h1 class="text-center">
+            <span class="font-montserrat font-black text-[24px] text-black leading-tight block">
+              Let’s Build Better
+            </span>
+            <span class="font-montserrat font-normal text-[24px] text-[#00A256] leading-tight block">
+              Ingredients. Together.
+            </span>
+          </h1>
         </div>
 
-        <div class="flex items-center gap-3 z-10">
-          <div class="w-[42px] h-[42px] rounded-full bg-white flex items-center justify-center shrink-0 shadow-sm">
-            <img src="./public/assets/contact-us-mail.svg" alt="Mail" class="w-5 h-5 object-contain">
+        <!-- Mobile Form Card (FIRST) -->
+        <div class="w-full flex flex-col gap-6">
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center gap-2">
+              <span class="w-[4px] h-[18px] bg-[#FF8D00] rounded-full inline-block shrink-0"></span>
+              <span class="font-montserrat font-normal text-[13px] text-black uppercase tracking-[0.11em]">TELL US ABOUT YOUR PROJECT</span>
+            </div>
+            <h3 class="font-montserrat font-bold text-[14px] text-black leading-snug">Built to support formulation goals across categories and markets.</h3>
+            <p class="font-montserrat font-medium text-[12px] text-black/70">The more context you provide, the better we can support you.</p>
           </div>
-          <div class="flex flex-col">
-            <span class="font-montserrat font-bold text-[14px] text-white">Email</span>
-            <a href="mailto:sales@starizo.com" class="font-montserrat font-normal text-[14px] text-white hover:underline">sales@starizo.com</a>
-          </div>
+
+          <form action="#" method="POST" class="flex flex-col gap-4">
+            <div class="flex flex-col gap-1">
+              <label class="font-montserrat font-semibold text-[12px] text-black/80">Full Name*</label>
+              <input type="text" placeholder="John Doe" required class="w-full pb-1 border-b border-gray-300 focus:border-[#FF8D00] outline-none text-[14px] bg-transparent">
+            </div>
+            <div class="flex flex-col gap-1">
+              <label class="font-montserrat font-semibold text-[12px] text-black/80">Phone Number*</label>
+              <input type="tel" placeholder="+1 012 3456 789" required class="w-full pb-1 border-b border-gray-300 focus:border-[#FF8D00] outline-none text-[14px] bg-transparent">
+            </div>
+            <div class="flex flex-col gap-1">
+              <label class="font-montserrat font-semibold text-[12px] text-black/80">Industry*</label>
+              <select required class="w-full pb-1 border-b border-gray-300 focus:border-[#FF8D00] outline-none text-[14px] bg-transparent">
+                <option value="" disabled selected>Select Industry</option>
+                <option value="food">Food Manufacturers</option>
+                <option value="nutrition">Nutrition Brands</option>
+                <option value="pharma">Pharmaceutical</option>
+                <option value="personal-care">Personal Care</option>
+                <option value="industrial">Industrial Applications</option>
+              </select>
+            </div>
+            <div class="flex flex-col gap-1">
+              <label class="font-montserrat font-semibold text-[12px] text-black/80">Ingredient of interest*</label>
+              <input type="text" placeholder="Enter Ingredient" required class="w-full pb-1 border-b border-gray-300 focus:border-[#FF8D00] outline-none text-[14px] bg-transparent">
+            </div>
+            <div class="flex flex-col gap-1">
+              <label class="font-montserrat font-semibold text-[12px] text-black/80">Message*</label>
+              <textarea rows="2" placeholder="Write your message.." required class="w-full pb-1 border-b border-gray-300 focus:border-[#FF8D00] outline-none text-[14px] bg-transparent resize-none"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3 bg-[#FF8D00] text-white font-semibold text-[16px] rounded-[5px] flex items-center justify-center gap-2 shadow-md mt-2">
+              <span>Submit</span>
+              <svg class="w-4 h-4 fill-none stroke-current stroke-[2.5]" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </form>
         </div>
 
-        <div class="flex items-center gap-3 z-10">
-          <a href="#" class="w-[36px] h-[36px] rounded-full bg-white flex items-center justify-center shadow-sm">
-            <img src="./public/assets/linkdin.svg" alt="LinkedIn" class="w-4 h-4 object-contain">
-          </a>
-          <a href="#" class="w-[36px] h-[36px] rounded-full bg-white flex items-center justify-center shadow-sm">
-            <img src="./public/assets/instagram.svg" alt="Instagram" class="w-4 h-4 object-contain">
-          </a>
-          <a href="#" class="w-[36px] h-[36px] rounded-full bg-white flex items-center justify-center shadow-sm">
-            <img src="./public/assets/x-twetter.svg" alt="X" class="w-4 h-4 object-contain">
-          </a>
-          <a href="#" class="w-[36px] h-[36px] rounded-full bg-white flex items-center justify-center shadow-sm">
-            <img src="./public/assets/youtube.svg" alt="YouTube" class="w-4 h-4 object-contain">
-          </a>
+        <!-- Mobile Contact Info Orange Card (SECOND - Width 351px, Height 156px) -->
+        <div class="w-full max-w-[351px] bg-[#FF8D00] rounded-[16px] p-4 flex flex-col justify-between relative overflow-hidden shadow-lg mx-auto"
+          style="min-height: 156px;">
+          
+          <div class="flex flex-col gap-0.5 z-10">
+            <h2 class="font-poppins font-semibold text-[16px] text-white">Contact Information</h2>
+            <p class="font-poppins font-normal text-[12px] text-white/90">Say something to start a live chat!</p>
+          </div>
+
+          <div class="flex flex-col gap-2 z-10 mt-2">
+            <div class="flex items-center gap-2">
+              <img src="./public/assets/contact-us-mail.svg" alt="Mail" class="w-4 h-4 object-contain">
+              <div class="flex flex-col text-[11px]">
+                <span class="font-montserrat font-bold text-white leading-tight">Email</span>
+                <a href="mailto:sales@starizo.com" class="font-montserrat font-normal text-white hover:underline leading-tight">sales@starizo.com</a>
+              </div>
+            </div>
+
+            <!-- Social Icons Row -->
+            <div class="flex items-center gap-3 pt-1">
+              <a href="#" class="w-7 h-7 rounded-full bg-white flex items-center justify-center shadow-sm shrink-0">
+                <img src="./public/assets/linkdin.svg" alt="LinkedIn" class="w-4 h-4 object-contain">
+              </a>
+              <a href="#" class="w-7 h-7 rounded-full bg-white flex items-center justify-center shadow-sm shrink-0">
+                <img src="./public/assets/instagram.svg" alt="Instagram" class="w-4 h-4 object-contain">
+              </a>
+              <a href="#" class="w-7 h-7 rounded-full bg-white flex items-center justify-center shadow-sm shrink-0">
+                <img src="./public/assets/x-twetter.svg" alt="X" class="w-4 h-4 object-contain">
+              </a>
+              <a href="#" class="w-7 h-7 rounded-full bg-white flex items-center justify-center shadow-sm shrink-0">
+                <img src="./public/assets/youtube.svg" alt="YouTube" class="w-4 h-4 object-contain">
+              </a>
+            </div>
+          </div>
+
+          <img src="./public/assets/contact-us-leaf.svg" alt="" class="absolute bottom-0 right-0 w-[100px] opacity-20 pointer-events-none">
         </div>
 
-        <img src="./public/assets/contact-us-leaf.svg" alt="" class="absolute bottom-0 right-0 w-[140px] opacity-20 pointer-events-none">
-      </div>
-
-      <!-- Mobile Form Card -->
-      <div class="w-full max-w-[340px] bg-white rounded-[16px] p-6 shadow-md border border-gray-100 flex flex-col gap-6 mx-auto">
-        <div class="flex flex-col gap-2">
-          <div class="flex items-center gap-2">
-            <span class="w-[4px] h-[18px] bg-[#FF8D00] rounded-full inline-block shrink-0"></span>
-            <span class="font-montserrat font-normal text-[13px] text-black uppercase tracking-[0.11em]">TELL US ABOUT YOUR PROJECT</span>
-          </div>
-          <h3 class="font-montserrat font-bold text-[14px] text-black leading-snug">Built to support formulation goals across categories and markets.</h3>
-          <p class="font-montserrat font-medium text-[12px] text-black/70">The more context you provide, the better we can support you.</p>
-        </div>
-
-        <form action="#" method="POST" class="flex flex-col gap-4">
-          <div class="flex flex-col gap-1">
-            <label class="font-montserrat font-semibold text-[12px] text-black/80">Full Name*</label>
-            <input type="text" placeholder="John Doe" required class="w-full pb-1 border-b border-gray-300 focus:border-[#FF8D00] outline-none text-[14px] bg-transparent">
-          </div>
-          <div class="flex flex-col gap-1">
-            <label class="font-montserrat font-semibold text-[12px] text-black/80">Phone Number*</label>
-            <input type="tel" placeholder="+1 012 3456 789" required class="w-full pb-1 border-b border-gray-300 focus:border-[#FF8D00] outline-none text-[14px] bg-transparent">
-          </div>
-          <div class="flex flex-col gap-1">
-            <label class="font-montserrat font-semibold text-[12px] text-black/80">Work Email*</label>
-            <input type="email" placeholder="Enter Work Email" required class="w-full pb-1 border-b border-gray-300 focus:border-[#FF8D00] outline-none text-[14px] bg-transparent">
-          </div>
-          <div class="flex flex-col gap-1">
-            <label class="font-montserrat font-semibold text-[12px] text-black/80">Company name*</label>
-            <input type="text" placeholder="Enter Company name" required class="w-full pb-1 border-b border-gray-300 focus:border-[#FF8D00] outline-none text-[14px] bg-transparent">
-          </div>
-          <div class="flex flex-col gap-1">
-            <label class="font-montserrat font-semibold text-[12px] text-black/80">Industry*</label>
-            <select required class="w-full pb-1 border-b border-gray-300 focus:border-[#FF8D00] outline-none text-[14px] bg-transparent">
-              <option value="" disabled selected>Select Industry</option>
-              <option value="food">Food Manufacturers</option>
-              <option value="nutrition">Nutrition Brands</option>
-              <option value="pharma">Pharmaceutical</option>
-              <option value="personal-care">Personal Care</option>
-              <option value="industrial">Industrial Applications</option>
-            </select>
-          </div>
-          <div class="flex flex-col gap-1">
-            <label class="font-montserrat font-semibold text-[12px] text-black/80">Ingredient of interest*</label>
-            <input type="text" placeholder="Enter Ingredient" required class="w-full pb-1 border-b border-gray-300 focus:border-[#FF8D00] outline-none text-[14px] bg-transparent">
-          </div>
-          <div class="flex flex-col gap-1">
-            <label class="font-montserrat font-semibold text-[12px] text-black/80">Message*</label>
-            <textarea rows="2" placeholder="Write your message.." required class="w-full pb-1 border-b border-gray-300 focus:border-[#FF8D00] outline-none text-[14px] bg-transparent resize-none"></textarea>
-          </div>
-
-          <button type="submit" class="w-full py-3 bg-[#FF8D00] text-white font-semibold text-[16px] rounded-[5px] flex items-center justify-center gap-2 shadow-md mt-2">
-            <span>Submit</span>
-            <svg class="w-4 h-4 fill-none stroke-current stroke-[2.5]" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
-          </button>
-        </form>
-      </div>
+      </div>     </div>
 
     </main>
 
