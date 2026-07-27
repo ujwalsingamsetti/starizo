@@ -13,6 +13,7 @@ export default defineConfig({
         contact: resolve(__dirname, 'contact.html'),
         blog: resolve(__dirname, 'blog.html'),
         'blog-detail': resolve(__dirname, 'blog-detail.html'),
+        'research-lab': resolve(__dirname, 'research-lab.html'),
       },
     },
   },
