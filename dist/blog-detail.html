@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" crossorigin href="/assets/style-CtZ1B-ay.css">
+  <link rel="stylesheet" crossorigin href="/assets/style-BXBbyX-3.css">
 </head>
 
 <body class="font-montserrat bg-[#FDFBF3] text-black min-h-screen antialiased overflow-x-hidden">
@@ -18,71 +18,70 @@
   <!-- ==================== DESKTOP LAYOUT (hidden lg:block) ==================== -->
   <div class="hidden lg:block w-full">
     
-    <!-- Floating Navbar (23px top gap) -->
-    <header class="relative z-30 pt-[23px] mb-6 px-6 sm:px-10 md:px-14 lg:px-16">
-      <div id="navbar" class="w-full max-w-[1240px] mx-auto h-[85px] bg-white rounded-[26px] shadow-[0px_4px_44.6px_0px_rgba(0,0,0,0.05)] border border-gray-100 flex items-center justify-between px-6 md:px-10">
+    <main class="w-full relative bg-[#FDFBF3] pt-[130px] pb-20">
 
-        <a href="./index.html" class="flex items-center gap-2 focus:outline-none" aria-label="Starizo Home">
-          <img src="/assets/logo-BQEjsUfw.svg" alt="starizo™" class="h-9 w-auto">
-        </a>
+      <!-- Floating Navbar (23px top gap, floating over page background) -->
+      <header class="absolute top-[23px] left-0 right-0 z-30 px-6 sm:px-10 md:px-14 lg:px-16">
+        <div id="navbar" class="w-full max-w-[1240px] mx-auto h-[85px] bg-white rounded-[26px] shadow-[0px_4px_44.6px_0px_rgba(0,0,0,0.05)] border border-gray-100 flex items-center justify-between px-6 md:px-10">
 
-        <nav class="flex items-center gap-8 xl:gap-10 font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700]">
-          <!-- Products Dropdown (Starts after header navbar ends, left-aligned with Products) -->
-          <div class="relative group py-2">
-            <button type="button" class="flex items-center gap-1 font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] group-hover:font-semibold group-hover:text-[#5D3700] transition duration-200 focus:outline-none">
-              Products
-              <svg class="w-4 h-4 fill-current text-[#FF8D00] transition-transform duration-200 group-hover:rotate-180" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-              </svg>
-            </button>
+          <a href="./index.html" class="flex items-center gap-2 focus:outline-none" aria-label="Starizo Home">
+            <img src="/assets/logo-BQEjsUfw.svg" alt="starizo™" class="h-9 w-auto">
+          </a>
 
-            <!-- Mega Dropdown Container (Starts below bottom edge of header navbar) -->
-            <div class="absolute top-[calc(100%+22px)] -left-[24px] w-[556px] h-[112px] bg-white rounded-br-[44px] rounded-bl-[44px] rounded-tr-none rounded-tl-none shadow-2xl border border-gray-100/90 px-9 flex items-center justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-1 group-hover:translate-y-0 z-50">
-              
-              <!-- Inner Items Container (483x39, Gap 27px) -->
-              <div class="w-[483px] max-w-full h-[39px] flex items-center justify-between gap-[27px]">
+          <nav class="flex items-center gap-8 xl:gap-10 font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700]">
+            <!-- Products Dropdown (Starts after header navbar ends, left-aligned with Products) -->
+            <div class="relative group py-2">
+              <button type="button" class="flex items-center gap-1 font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] group-hover:font-semibold group-hover:text-[#5D3700] transition duration-200 focus:outline-none">
+                Products
+                <svg class="w-4 h-4 fill-current text-[#FF8D00] transition-transform duration-200 group-hover:rotate-180" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+              </button>
+
+              <!-- Mega Dropdown Container (Starts below bottom edge of header navbar) -->
+              <div class="absolute top-[calc(100%+22px)] -left-[24px] w-[556px] h-[112px] bg-white rounded-br-[44px] rounded-bl-[44px] rounded-tr-none rounded-tl-none shadow-2xl border border-gray-100/90 px-9 flex items-center justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-1 group-hover:translate-y-0 z-50">
                 
-                <!-- Food & Beverage Option -->
-                <a href="./food-beverage.html" class="flex items-center gap-[12px] group/item text-[#5D3700] hover:text-[#FF8D00] transition-colors">
-                  <div class="w-[39px] h-[39px] rounded-full border border-[#00A256] flex items-center justify-center shrink-0 bg-white group-hover/item:border-[#FF8D00] transition-colors">
-                    <img src="/assets/food-beverage-icon-DZzNToH5.svg" alt="Food &amp; Beverage" class="w-[24.64px] h-[25.16px] object-contain">
-                  </div>
-                  <span class="font-montserrat font-medium text-[16px] leading-[29px] tracking-normal text-[#5D3700] whitespace-nowrap">Food &amp; Beverage</span>
-                </a>
+                <!-- Inner Items Container (483x39, Gap 27px) -->
+                <div class="w-[483px] max-w-full h-[39px] flex items-center justify-between gap-[27px]">
+                  
+                  <!-- Food & Beverage Option -->
+                  <a href="./food-beverage.html" class="flex items-center gap-[12px] group/item text-[#5D3700] hover:text-[#FF8D00] transition-colors">
+                    <div class="w-[39px] h-[39px] rounded-full border border-[#00A256] flex items-center justify-center shrink-0 bg-white group-hover/item:border-[#FF8D00] transition-colors">
+                      <img src="/assets/food-beverage-icon-DZzNToH5.svg" alt="Food &amp; Beverage" class="w-[24.64px] h-[25.16px] object-contain">
+                    </div>
+                    <span class="font-montserrat font-medium text-[16px] leading-[29px] tracking-normal text-[#5D3700] whitespace-nowrap">Food &amp; Beverage</span>
+                  </a>
 
-                <!-- Cosmetics & Personal Care Option -->
-                <a href="./cosmetics-personal-care.html" class="flex items-center gap-[12px] group/item text-[#5D3700] hover:text-[#FF8D00] transition-colors">
-                  <div class="w-[39px] h-[39px] rounded-full border border-[#00A256] flex items-center justify-center shrink-0 bg-white group-hover/item:border-[#FF8D00] transition-colors">
-                    <img src="/assets/cosmitics-icon-Bu_h2xdo.svg" alt="Cosmetics &amp; Personal Care" class="w-[24.64px] h-[25.16px] object-contain">
-                  </div>
-                  <span class="font-montserrat font-medium text-[16px] leading-[29px] tracking-normal text-[#5D3700] whitespace-nowrap">Cosmetics &amp; Personal Care</span>
-                </a>
+                  <!-- Cosmetics & Personal Care Option -->
+                  <a href="./cosmetics-personal-care.html" class="flex items-center gap-[12px] group/item text-[#5D3700] hover:text-[#FF8D00] transition-colors">
+                    <div class="w-[39px] h-[39px] rounded-full border border-[#00A256] flex items-center justify-center shrink-0 bg-white group-hover/item:border-[#FF8D00] transition-colors">
+                      <img src="/assets/cosmitics-icon-Bu_h2xdo.svg" alt="Cosmetics &amp; Personal Care" class="w-[24.64px] h-[25.16px] object-contain">
+                    </div>
+                    <span class="font-montserrat font-medium text-[16px] leading-[29px] tracking-normal text-[#5D3700] whitespace-nowrap">Cosmetics &amp; Personal Care</span>
+                  </a>
+
+                </div>
 
               </div>
-
             </div>
+
+            <a href="./about.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition duration-200">About</a>
+            <a href="./partner-with-us.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition duration-200">Partner with Us</a>
+            <a href="./research-lab.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition duration-200">Research Lab</a>
+            <a href="./careers.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition duration-200">Careers</a>
+            <a href="./blog.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition duration-200">Insights</a>
+          </nav>
+
+          <div class="flex items-center gap-4">
+            <a href="./contact.html" class="bg-starizo-orange hover:bg-starizo-orange-dark text-white font-semibold text-[18px] px-6 py-2.5 rounded-[22px] transition-all duration-300 flex items-center gap-2 group select-none">
+              Contact Us
+              <svg class="w-4 h-4 fill-current transform group-hover:translate-x-0.5 transition-transform duration-200" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.15736 2.93105L9.76836 7.61605C9.86948 7.71827 9.92621 7.85626 9.92621 8.00005C9.92621 8.14384 9.86948 8.28183 9.76836 8.38405L5.15835 13.0691C5.05728 13.1719 5.00064 13.3103 5.00064 13.4546C5.00064 13.5988 5.05728 13.7372 5.15835 13.8401C5.20773 13.8907 5.26675 13.931 5.33192 13.9584C5.3971 13.9859 5.46712 14.0001 5.53786 14.0001C5.60859 14.0001 5.67861 13.9859 5.74379 13.9584C5.80896 13.931 5.86798 13.931 5.91735 13.8401L10.5274 9.15605C10.8303 8.84753 11 8.43243 11 8.00005C11 7.56768 10.8303 7.15257 10.5274 6.84405L5.91736 2.16005C5.86796 2.10925 5.80889 2.06887 5.74362 2.04129C5.67835 2.01372 5.60821 1.99951 5.53736 1.99951C5.4665 1.99951 5.39636 2.01372 5.3311 2.04129C5.26583 2.06887 5.20675 2.10925 5.15736 2.16005C5.05628 2.26291 4.99964 2.40135 4.99964 2.54555C4.99964 2.68976 5.05628 2.8282 5.15736 2.93105Z" fill="currentColor"></path>
+              </svg>
+            </a>
           </div>
-
-          <a href="./about.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition duration-200">About</a>
-          <a href="./partner-with-us.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition duration-200">Partner with Us</a>
-          <a href="./research-lab.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition duration-200">Research Lab</a>
-          <a href="./careers.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition duration-200">Careers</a>
-          <a href="./blog.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition duration-200">Insights</a>
-        </nav>
-
-        <div class="flex items-center gap-4">
-          <a href="./contact.html" class="bg-starizo-orange hover:bg-starizo-orange-dark text-white font-semibold text-[18px] px-6 py-2.5 rounded-[22px] transition-all duration-300 flex items-center gap-2 group select-none">
-            Contact Us
-            <svg class="w-4 h-4 fill-current transform group-hover:translate-x-0.5 transition-transform duration-200" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.15736 2.93105L9.76836 7.61605C9.86948 7.71827 9.92621 7.85626 9.92621 8.00005C9.92621 8.14384 9.86948 8.28183 9.76836 8.38405L5.15835 13.0691C5.05728 13.1719 5.00064 13.3103 5.00064 13.4546C5.00064 13.5988 5.05728 13.7372 5.15835 13.8401C5.20773 13.8907 5.26675 13.931 5.33192 13.9584C5.3971 13.9859 5.46712 14.0001 5.53786 14.0001C5.60859 14.0001 5.67861 13.9859 5.74379 13.9584C5.80896 13.931 5.86798 13.931 5.91735 13.8401L10.5274 9.15605C10.8303 8.84753 11 8.43243 11 8.00005C11 7.56768 10.8303 7.15257 10.5274 6.84405L5.91736 2.16005C5.86796 2.10925 5.80889 2.06887 5.74362 2.04129C5.67835 2.01372 5.60821 1.99951 5.53736 1.99951C5.4665 1.99951 5.39636 2.01372 5.3311 2.04129C5.26583 2.06887 5.20675 2.10925 5.15736 2.16005C5.05628 2.26291 4.99964 2.40135 4.99964 2.54555C4.99964 2.68976 5.05628 2.8282 5.15736 2.93105Z" fill="currentColor"></path>
-            </svg>
-          </a>
         </div>
-      </div>
-    </header>
-
-    <!-- Main Content Wrapper -->
-    <main class="w-full pt-[130px] pb-20 bg-[#FDFBF3]">
+      </header>
       
       <!-- Breadcrumb (Insights / Insights Details) -->
       <div class="w-full max-w-[1120px] mx-auto px-4 lg:px-0 mb-4">
