@@ -38,35 +38,35 @@
         <!-- Desktop Navigation Links -->
         <nav class="flex items-center gap-8 text-[14px] font-medium text-black">
           
-          <!-- Products Dropdown (Figma Spec: 556x112, Bottom Radius 44px) -->
+          <!-- Products Dropdown (Target Image 1 Specs: Starts right at Products button, extends right, text #5D3700) -->
           <div class="relative group py-2">
-            <button type="button" class="flex items-center gap-1.5 hover:text-[#FF8D00] transition-colors font-bold text-[15px] py-1 text-[#5D3700] focus:outline-none">
+            <button type="button" class="flex items-center gap-1.5 font-bold text-[18px] py-1 text-[#5D3700] hover:text-[#5D3700] focus:outline-none">
               Products
               <svg class="w-4 h-4 fill-current text-[#FF8D00] transition-transform duration-200 group-hover:rotate-180" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
               </svg>
             </button>
             
-            <!-- Mega Dropdown Container -->
-            <div class="absolute top-full -left-[140px] w-[556px] h-[112px] bg-white rounded-br-[44px] rounded-bl-[44px] rounded-tr-none rounded-tl-none shadow-2xl border border-gray-100/90 px-9 flex items-center justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0 z-50">
+            <!-- Mega Dropdown Container (Starts right at Products, extends right) -->
+            <div class="absolute top-[calc(100%+12px)] -left-[24px] w-[556px] h-[112px] bg-white rounded-br-[44px] rounded-bl-[44px] rounded-tr-none rounded-tl-none shadow-2xl border border-gray-100/90 px-9 flex items-center justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-1 group-hover:translate-y-0 z-50">
               
               <!-- Inner Items Container (483x39, Gap 27px) -->
               <div class="w-[483px] max-w-full h-[39px] flex items-center justify-between gap-[27px]">
                 
                 <!-- Food & Beverage Option -->
-                <a href="./food-beverage.html" class="flex items-center gap-[12px] group/item text-[#333333] hover:text-[#FF8D00] transition-colors">
+                <a href="./food-beverage.html" class="flex items-center gap-[12px] group/item text-[#5D3700] hover:text-[#FF8D00] transition-colors">
                   <div class="w-[39px] h-[39px] rounded-full border border-[#00A256] flex items-center justify-center shrink-0 bg-white group-hover/item:border-[#FF8D00] transition-colors">
                     <img src="./public/assets/food-beverage-icon.svg" alt="Food &amp; Beverage" class="w-[24.64px] h-[25.16px] object-contain">
                   </div>
-                  <span class="font-montserrat font-bold text-[15px] leading-[22px] whitespace-nowrap">Food &amp; Beverage</span>
+                  <span class="font-montserrat font-bold text-[17px] leading-[22px] whitespace-nowrap">Food &amp; Beverage</span>
                 </a>
 
                 <!-- Cosmetics & Personal Care Option -->
-                <a href="./cosmetics-personal-care.html" class="flex items-center gap-[12px] group/item text-[#333333] hover:text-[#FF8D00] transition-colors">
+                <a href="./cosmetics-personal-care.html" class="flex items-center gap-[12px] group/item text-[#5D3700] hover:text-[#FF8D00] transition-colors">
                   <div class="w-[39px] h-[39px] rounded-full border border-[#00A256] flex items-center justify-center shrink-0 bg-white group-hover/item:border-[#FF8D00] transition-colors">
                     <img src="./public/assets/cosmitics-icon.svg" alt="Cosmetics &amp; Personal Care" class="w-[24.64px] h-[25.16px] object-contain">
                   </div>
-                  <span class="font-montserrat font-bold text-[15px] leading-[22px] whitespace-nowrap">Cosmetics &amp; Personal Care</span>
+                  <span class="font-montserrat font-bold text-[17px] leading-[22px] whitespace-nowrap">Cosmetics &amp; Personal Care</span>
                 </a>
 
               </div>
