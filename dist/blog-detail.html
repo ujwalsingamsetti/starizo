@@ -18,27 +18,24 @@
   <!-- ==================== DESKTOP LAYOUT (hidden lg:block) ==================== -->
   <div class="hidden lg:block w-full">
     
-    <!-- 1. FLOATING NAVBAR / HEADER -->
-    <header class="fixed top-6 left-0 right-0 z-50 px-[80px]">
-      <div class="max-w-[1280px] mx-auto bg-white/95 backdrop-blur-md rounded-full shadow-lg border border-gray-100/80 px-8 py-3.5 flex items-center justify-between transition-all duration-300">
-        
-        <!-- Logo -->
-        <a href="./index.html" class="flex items-center gap-2 group">
-          <img src="/assets/logo-BQEjsUfw.svg" alt="STARIZO Logo" class="h-8 w-auto transition-transform duration-300 group-hover:scale-105">
+    <!-- Floating Navbar (Balanced top spacing) -->
+    <header class="relative z-30 pt-2 mb-6 px-6 sm:px-10 md:px-14 lg:px-16">
+      <div id="navbar" class="w-full max-w-[1240px] mx-auto h-[85px] bg-white rounded-[26px] shadow-[0px_4px_44.6px_0px_rgba(0,0,0,0.05)] border border-gray-100 flex items-center justify-between px-6 md:px-10">
+
+        <a href="./index.html" class="flex items-center gap-2 focus:outline-none" aria-label="Starizo Home">
+          <img src="/assets/logo-BQEjsUfw.svg" alt="starizo™" class="h-9 w-auto">
         </a>
 
-        <!-- Desktop Navigation Links -->
-        <nav class="flex items-center gap-8 font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700]">
-          
+        <nav class="flex items-center gap-8 xl:gap-10 font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700]">
           <!-- Products Dropdown (Starts after header navbar ends, left-aligned with Products) -->
           <div class="relative group py-2">
-            <button type="button" class="flex items-center gap-1.5 font-montserrat font-normal text-[18px] leading-[21px] tracking-normal py-1 text-[#5D3700] group-hover:font-semibold group-hover:text-[#5D3700] transition-all duration-200 focus:outline-none">
+            <button type="button" class="flex items-center gap-1 font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] group-hover:font-semibold group-hover:text-[#5D3700] transition duration-200 focus:outline-none">
               Products
               <svg class="w-4 h-4 fill-current text-[#FF8D00] transition-transform duration-200 group-hover:rotate-180" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
               </svg>
             </button>
-            
+
             <!-- Mega Dropdown Container (Starts below bottom edge of header navbar) -->
             <div class="absolute top-[calc(100%+22px)] -left-[24px] w-[556px] h-[112px] bg-white rounded-br-[44px] rounded-bl-[44px] rounded-tr-none rounded-tl-none shadow-2xl border border-gray-100/90 px-9 flex items-center justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-1 group-hover:translate-y-0 z-50">
               
@@ -66,22 +63,21 @@
             </div>
           </div>
 
-          <a href="./about.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition-colors">About</a>
-          <a href="./partner-with-us.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition-colors">Partner with Us</a>
-          <a href="./research-lab.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition-colors">Research Lab</a>
-          <a href="./careers.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition-colors">Careers</a>
-          <a href="./blog.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition-colors">Insights</a>
+          <a href="./about.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition duration-200">About</a>
+          <a href="./partner-with-us.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition duration-200">Partner with Us</a>
+          <a href="./research-lab.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition duration-200">Research Lab</a>
+          <a href="./careers.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition duration-200">Careers</a>
+          <a href="./blog.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition duration-200">Insights</a>
         </nav>
 
-        <!-- CTA Button -->
-        <a href="./contact.html"
-          class="h-[48px] bg-[#FF8D00] hover:bg-[#e07c00] text-white font-montserrat font-bold text-[15px] px-8 rounded-full inline-flex items-center gap-2 shadow-md hover:shadow-lg transition-all duration-200 select-none">
-          Contact Us
-          <svg class="w-4 h-4 stroke-current fill-none stroke-[2.5]" viewBox="0 0 24 24">
-            <polyline points="9 18 15 12 9 6"></polyline>
-          </svg>
-        </a>
-
+        <div class="flex items-center gap-4">
+          <a href="./contact.html" class="bg-starizo-orange hover:bg-starizo-orange-dark text-white font-semibold text-[18px] px-6 py-2.5 rounded-[22px] transition-all duration-300 flex items-center gap-2 group select-none">
+            Contact Us
+            <svg class="w-4 h-4 fill-current transform group-hover:translate-x-0.5 transition-transform duration-200" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.15736 2.93105L9.76836 7.61605C9.86948 7.71827 9.92621 7.85626 9.92621 8.00005C9.92621 8.14384 9.86948 8.28183 9.76836 8.38405L5.15835 13.0691C5.05728 13.1719 5.00064 13.3103 5.00064 13.4546C5.00064 13.5988 5.05728 13.7372 5.15835 13.8401C5.20773 13.8907 5.26675 13.931 5.33192 13.9584C5.3971 13.9859 5.46712 14.0001 5.53786 14.0001C5.60859 14.0001 5.67861 13.9859 5.74379 13.9584C5.80896 13.931 5.86798 13.931 5.91735 13.8401L10.5274 9.15605C10.8303 8.84753 11 8.43243 11 8.00005C11 7.56768 10.8303 7.15257 10.5274 6.84405L5.91736 2.16005C5.86796 2.10925 5.80889 2.06887 5.74362 2.04129C5.67835 2.01372 5.60821 1.99951 5.53736 1.99951C5.4665 1.99951 5.39636 2.01372 5.3311 2.04129C5.26583 2.06887 5.20675 2.10925 5.15736 2.16005C5.05628 2.26291 4.99964 2.40135 4.99964 2.54555C4.99964 2.68976 5.05628 2.8282 5.15736 2.93105Z" fill="currentColor"></path>
+            </svg>
+          </a>
+        </div>
       </div>
     </header>
 
