@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" crossorigin href="/assets/style-C-AqhPb1.css">
+  <link rel="stylesheet" crossorigin href="/assets/style-BXBbyX-3.css">
 </head>
 
 <body class="font-montserrat bg-[#FDFBF3] text-black min-h-screen antialiased overflow-x-hidden">
@@ -18,16 +18,16 @@
   <!-- ==================== DESKTOP LAYOUT (hidden lg:block) ==================== -->
   <div class="hidden lg:block w-full">
     
-    <!-- Floating Navbar (1:1 with blog.html / index.html) -->
-    <div class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
-      <nav
-        class="pointer-events-auto bg-white/95 backdrop-blur-md border border-[#E8E8EA] rounded-full shadow-[0px_4px_25px_0px_rgba(0,0,0,0.06)] px-8 py-3.5 flex items-center justify-between gap-12 max-w-[1140px] w-full transition-all">
+    <!-- 1. DESKTOP HEADER NAVIGATION (Fixed Glassmorphic Floating Bar) -->
+    <header class="fixed top-6 left-0 right-0 z-50 px-[80px]">
+      <div class="max-w-[1280px] mx-auto bg-white/95 backdrop-blur-md rounded-full shadow-lg border border-gray-100/80 px-8 py-3.5 flex items-center justify-between transition-all duration-300">
+        
         <!-- Logo -->
-        <a href="./index.html" class="flex items-center gap-2">
-          <img src="/assets/logo-BQEjsUfw.svg" alt="Starizo Logo" class="h-8 w-auto">
+        <a href="./index.html" class="flex items-center gap-2 group">
+          <img src="/assets/logo-BQEjsUfw.svg" alt="STARIZO Logo" class="h-8 w-auto transition-transform duration-300 group-hover:scale-105">
         </a>
 
-        <!-- Links -->
+        <!-- Desktop Navigation Links -->
         <nav class="flex items-center gap-8 font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700]">
 
           <!-- Products Dropdown (Starts after header navbar ends, left-aligned with Products) -->
@@ -73,14 +73,17 @@
           <a href="./blog.html" class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition-colors">Insights</a>
         </nav>
 
-        <!-- Contact Us Pill Button -->
+        <!-- CTA Button -->
         <a href="./contact.html"
-          class="bg-[#FF8D00] hover:bg-[#e07c00] text-white font-montserrat font-semibold text-[14px] px-6 py-2.5 rounded-full flex items-center gap-2 shadow-md hover:shadow-lg transition-all select-none">
-          <span>Contact Us</span>
-          <svg class="w-4 h-4 fill-none stroke-current stroke-[2.5]" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          class="h-[48px] bg-[#FF8D00] hover:bg-[#e07c00] text-white font-montserrat font-bold text-[15px] px-8 rounded-full inline-flex items-center gap-2 shadow-md hover:shadow-lg transition-all duration-200 select-none">
+          Contact Us
+          <svg class="w-4 h-4 stroke-current fill-none stroke-[2.5]" viewBox="0 0 24 24">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
         </a>
-      </nav>
-    </div>
+
+      </div>
+    </header>
 
     <!-- Main Content Wrapper -->
     <main class="w-full pt-[130px] pb-20 bg-[#FDFBF3]">

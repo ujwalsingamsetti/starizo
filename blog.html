@@ -16,15 +16,16 @@
   <!-- ==================== DESKTOP LAYOUT (hidden xl:block) ==================== -->
   <div class="hidden xl:block w-full">
     
-    <!-- Floating Navbar -->
-    <div class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
-      <header class="w-full max-w-[1196px] h-[65px] bg-white/95 backdrop-blur-md rounded-full shadow-[0px_10px_30px_rgba(0,0,0,0.08)] px-8 flex items-center justify-between pointer-events-auto border border-gray-100/50">
+    <!-- 1. DESKTOP HEADER NAVIGATION (Fixed Glassmorphic Floating Bar) -->
+    <header class="fixed top-6 left-0 right-0 z-50 px-[80px]">
+      <div class="max-w-[1280px] mx-auto bg-white/95 backdrop-blur-md rounded-full shadow-lg border border-gray-100/80 px-8 py-3.5 flex items-center justify-between transition-all duration-300">
+        
         <!-- Logo -->
-        <a href="./index.html" class="flex items-center">
-          <img src="./public/assets/logo.svg" alt="Starizo Logo" class="h-9 w-auto">
+        <a href="./index.html" class="flex items-center gap-2 group">
+          <img src="./public/assets/logo.svg" alt="STARIZO Logo" class="h-8 w-auto transition-transform duration-300 group-hover:scale-105">
         </a>
 
-        <!-- Nav Links -->
+        <!-- Desktop Navigation Links -->
         <nav class="flex items-center gap-8 font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700]">
 
           <!-- Products Dropdown (Starts after header navbar ends, left-aligned with Products) -->
@@ -71,12 +72,16 @@
         </nav>
 
         <!-- CTA Button -->
-        <a href="./contact.html" class="h-[43px] bg-[#FF8D00] hover:bg-[#e07c00] text-white px-6 rounded-full font-bold text-[14px] flex items-center gap-2 transition-transform transform hover:scale-105 shadow-sm">
-          <span>Contact Us</span>
-          <svg class="w-4 h-4 fill-none stroke-current stroke-[2.5]" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        <a href="./contact.html"
+          class="h-[48px] bg-[#FF8D00] hover:bg-[#e07c00] text-white font-montserrat font-bold text-[15px] px-8 rounded-full inline-flex items-center gap-2 shadow-md hover:shadow-lg transition-all duration-200 select-none">
+          Contact Us
+          <svg class="w-4 h-4 stroke-current fill-none stroke-[2.5]" viewBox="0 0 24 24">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
         </a>
-      </header>
-    </div>
+
+      </div>
+    </header>
 
     <!-- Hero Main Container (Full Width Background, 1:1 Figma Specs) -->
     <section class="relative w-full h-[800px] bg-[#FDFBF3] overflow-hidden">
