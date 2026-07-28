@@ -79,8 +79,40 @@
               </div>
             </div>
 
-            <a href="./about.html"
-              class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition duration-200">About</a>
+            <!-- About Dropdown (Starts after header navbar ends, left-aligned with About) -->
+            <div class="relative group py-2">
+              <a href="./about.html" class="flex items-center gap-1 font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] group-hover:font-semibold group-hover:text-[#5D3700] transition duration-200 focus:outline-none">
+                About
+              </a>
+
+              <!-- About Mega Dropdown Container (Starts below bottom edge of header navbar) -->
+              <div class="absolute top-[calc(100%+22px)] -left-[24px] w-auto h-[112px] min-w-[530px] bg-white rounded-br-[44px] rounded-bl-[44px] rounded-tr-none rounded-tl-none shadow-2xl border border-gray-100/90 px-9 flex items-center justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-1 group-hover:translate-y-0 z-50">
+                
+                <!-- Inner Items Container (Gap 32px) -->
+                <div class="flex items-center justify-between gap-[32px] whitespace-nowrap">
+                  
+                  <!-- Our Story Option -->
+                  <a href="./about.html#story" class="flex items-center gap-[10px] group/item text-[#5D3700] hover:text-[#FF8D00] transition-colors">
+                    <span class="w-[3px] h-[22px] bg-[#FF8D00] rounded-full inline-block shrink-0"></span>
+                    <span class="font-montserrat font-medium text-[16px] leading-[29px] tracking-normal text-[#5D3700] group-hover/item:text-[#FF8D00] transition-colors whitespace-nowrap">Our Story</span>
+                  </a>
+
+                  <!-- Application Option -->
+                  <a href="./about.html#application" class="flex items-center gap-[10px] group/item text-[#5D3700] hover:text-[#FF8D00] transition-colors">
+                    <span class="w-[3px] h-[22px] bg-[#FF8D00] rounded-full inline-block shrink-0"></span>
+                    <span class="font-montserrat font-medium text-[16px] leading-[29px] tracking-normal text-[#5D3700] group-hover/item:text-[#FF8D00] transition-colors whitespace-nowrap">Application</span>
+                  </a>
+
+                  <!-- Technology & Quality Option -->
+                  <a href="./about.html#technology" class="flex items-center gap-[10px] group/item text-[#5D3700] hover:text-[#FF8D00] transition-colors">
+                    <span class="w-[3px] h-[22px] bg-[#FF8D00] rounded-full inline-block shrink-0"></span>
+                    <span class="font-montserrat font-medium text-[16px] leading-[29px] tracking-normal text-[#5D3700] group-hover/item:text-[#FF8D00] transition-colors whitespace-nowrap">Technology &amp; Quality</span>
+                  </a>
+
+                </div>
+
+              </div>
+            </div>
             <a href="./partner-with-us.html"
               class="font-montserrat font-normal text-[18px] leading-[21px] tracking-normal text-[#5D3700] hover:text-[#FF8D00] transition duration-200">Partner with Us</a>
             <a href="./research-lab.html"
